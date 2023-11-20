@@ -1,0 +1,296 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+/* logo */
+.logo {
+  font-size: 26px;
+  color: #52FF00;
+  font-weight: 400;
+  font-family: Anton;
+  word-wrap: break-word;
+}
+
+.logo:hover {
+  color: #52FF00;
+}
+
+.container-nav {
+  background-color: rgba(255, 253, 253, 0.18);
+}
+
+.ul-margin {
+  margin-left: 50px;
+}
+
+.search {
+  width: 300px;
+  position: relative;
+  background: rgb(255, 255, 255, 0.24);
+  border: 0px;
+  border-radius: 50px;
+  margin-right: 60px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.icons {
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.search-position {
+  position: absolute;
+  color: gray;
+  top: 17px;
+  right: 210px;
+  font-size: 20px;
+}
+
+.navbar .nav-item .dropdown-menu {
+  display: none;
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+  margin-top: 0;
+}
+
+a.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-toggler-icon {
+  color: white
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/banner.JPG") no-repeat;
+  background-size: 100% 100%;
+}
+.shop{
+  color: white;
+}
+.member{
+  color: white;
+}
+.shop:hover{
+  color: white;
+}
+.member:hover{
+  color: white;
+}
+.shop-now {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 500px;
+  height: 340px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.shop-now-h1 {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
+  font-family: Inter;
+  font-size: 40 px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.5%;
+}
+
+.shop-now-p {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.5%;
+}
+
+.shop-now-button {
+  height: 30px;
+  width: 200px;
+  border: 0px;
+  border-radius: 50px;
+}
+
+.shop-now-a {
+  width: 200px;
+  border-radius: 50px;
+}
+
+.carousel-position {
+  width: 1440px;
+  height: 713px;
+}
+
+.emailsection {
+  height: 91px;
+}
+
+.design {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.text-1 {
+  color: #FFF;
+  text-align: end;
+  font-family: Inter;
+  font-size: 25.233px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-2 {
+  color: #FFF;
+  text-align: end;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 1rem;
+}
+
+.text-3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 25.233px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.shop-section {
+  width: 1366px;
+  height: 615px;
+}
+
+.equipment {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 26.66px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.btn-orange {
+  background-color: #FF5C00;
+}
+
+.btn-orange:hover {
+  background-color: #FF5C00;
+  color: white;
+}
+
+.costumize-section {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 26.66px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.customize-text {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.customize-p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.canonnpro-text {
+  font-family: Race Sport;
+  font-size: 47.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(90deg, #EA5719 0%, #F49A06 106.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.canonnpro-p {
+  width: 516px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 31.81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer{
+  height: 50px;
+  background: white;
+}
