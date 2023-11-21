@@ -98,7 +98,7 @@
 					</div>
 
 					<div class="d-grid mt-lg-4 mt-2">
-						<button type="submit" name="submit" value="submit" class="btn btn-primary btn-lg">立即報名</button>
+						<button type="submit" name="submit" value="submit" class="btn btn-primary btn-lg" id="submit">立即報名</button>
 					</div>
 				</form>
 
@@ -118,6 +118,7 @@
 			var phone = $('#phone').val()
 			var exp = $('#exp').val()
 			var level = $('#level').val()
+			var submit = $('#submit').val()
 
 			// 加載數據
 			$('#error').load('mail.php', {
@@ -127,6 +128,7 @@
 				phone: phone,
 				exp: exp,
 				level: level,
+				submit: submit
 			})
 		})
 	</script>

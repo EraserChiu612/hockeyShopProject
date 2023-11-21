@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: black;
+  /* background-color: black; */
 }
 
 /* logo */
@@ -103,18 +103,23 @@ a.nav-link.dropdown-toggle::after {
   background: url("../images/banner.JPG") no-repeat;
   background-size: 100% 100%;
 }
-.shop{
+
+.shop {
   color: white;
 }
-.member{
+
+.member {
   color: white;
 }
-.shop:hover{
+
+.shop:hover {
   color: white;
 }
-.member:hover{
+
+.member:hover {
   color: white;
 }
+
 .shop-now {
   position: absolute;
   top: 40%;
@@ -290,7 +295,8 @@ a.nav-link.dropdown-toggle::after {
   font-weight: 400;
   line-height: normal;
 }
-footer{
+
+footer {
   height: 50px;
   background: white;
 }
