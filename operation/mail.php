@@ -27,7 +27,6 @@ if (isset($_POST["submit"])) {
     //mail(收件者, 主旨, 內容, 信件標頭)
     if (mail($mailto, $mailSubject, $mailContent, $mailHeader)) {
       echo "<span class='form-success'>郵件已經成功發送.</span>";
-      exit();
     } else {
       echo "<span class='form-error'>郵件發送失敗.</span>";
     }
