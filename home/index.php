@@ -87,13 +87,13 @@ include_once "../layout/navbar.php";
 			<div class="carousel-position">
 				<div class="carousel-inner carousel-margin">
 					<div class="carousel-item active" data-bs-interval="2000">
-						<img src="images/first.jpg" class="img-fluid" style="width: 1440px" alt="..." />
+						<img src="../public/images/first.jpg" class="img-fluid" style="width: 1440px" alt="..." />
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="images/second.jpg" class="img-fluid" style="width: 1440px" alt="..." />
+						<img src="../public/images/second.jpg" class="img-fluid" style="width: 1440px" alt="..." />
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="images/first.jpg" class="img-fluid" style="width: 1440px" alt="..." />
+						<img src="../public/images/first.jpg" class="img-fluid" style="width: 1440px" alt="..." />
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

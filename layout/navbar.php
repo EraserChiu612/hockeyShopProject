@@ -15,14 +15,14 @@
 <body>
 	<nav class="navbar navbar-expand-lg text-white container-nav navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand logo ms-3" href="index.html">APEX</a>
+			<a class="navbar-brand logo ms-3" href="../home/index.php">APEX</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon navbar-light"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-margin">
 					<li class="nav-item ms-5">
-						<a class="nav-link" href="about.html">ABOUT</a>
+						<a class="nav-link" href="../about/about.php">ABOUT</a>
 					</li>
 					<li class="nav-item dropdown ms-5">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,7 +53,7 @@
 								<hr class="dropdown-divider" />
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Some thing else here</a>
+								<a class="dropdown-item" href="#">Something else here</a>
 							</li>
 						</ul>
 					</li>
