@@ -5,12 +5,14 @@ require_once '../layout/navbar.php';
 <main>
   <div class="container-fluid text-center">
     <div class="row ">
-      <div class="col-12 bg-primary">
-        <h1 style="color:white;">歡迎大朋友小朋友們一起來!!!<br />
-          <span style="color:#ff5c00 "><b>我們是Puck Moose Hockey帕克鹿曲棍球俱樂部</b></span><br />
+      <div class="col-12 py-5" style="background-image: url('../public/images/child02.png');  background-repeat:no-repeat">
+        <h2 style="color:white;">歡迎大朋友小朋友們一起來!!!<br />
+          <span style="color:#ff5c00 ">
+            <b>我們是Puck Moose Hockey帕克鹿曲棍球俱樂部</b>
+          </span><br />
           想要擁有不一樣的溜冰體驗嗎？<br />
           快來試試冰刀滑冰吧！
-        </h1>
+        </h2>
       </div>
     </div>
   </div>
@@ -18,10 +20,10 @@ require_once '../layout/navbar.php';
     <div class="row ">
       <div class="col-6 ">
         <div class="coach" style="background-image: url('../public/images/bg-stone.png');">
-          <h1 style="color:white; padding-top:50px;">Puck Moose Hockey<br />
-            <span style="color:#ff5c00 ">帕克鹿曲棍球俱樂部</span><br />
+          <h2 style="color:white; padding-top:50px;">Puck Moose Hockey<br />
+            <span style="color:#ff5c00 ">帕克鹿曲棍球俱樂部</b></span><br />
             溜冰課程
-          </h1>
+          </h2>
           <p style="color:white; text-align:start; padding: 0 80px; line-height: 30px;">時間: 每週四晚上 (即日起-113/01/18) <br />
             課程介紹: <br />
             1. 基礎溜冰 2. 手腳並用之溜冰進階 -- 曲棍球 (須具備基本自主滑冰能力, 跌倒可自行站立) <br />
@@ -48,9 +50,8 @@ require_once '../layout/navbar.php';
       </div>
       <div class="col-6">
         <div class="coach" style="background-image: url('../public/images/bg-stone.png');">
-          <h1 style="color:#ff5c00; padding:50px 0; ">
-            林睿宇 - 專業教練
-          </h1>
+          <h2 style="color:#ff5c00; padding:50px 0; "><b> 林睿宇 - 專業教練</b>
+          </h2>
           <p style="color:white; text-align:start; padding: 0 80px 50px; line-height: 30px;"> 教學資歷:<br />
             帕克鹿教練 維京人助教<br />
             教練資歷:<br />
@@ -67,9 +68,9 @@ require_once '../layout/navbar.php';
       </div>
       <div class="col-6">
         <div class="coach" style="background-image: url('../public/images/bg-stone.png');">
-          <h1 style="color:#ff5c00; padding:50px 0; ">
-            趙子翔 - 專業教練
-          </h1>
+          <h2 style="color:#ff5c00; padding:50px 0; "><b>
+              趙子翔 - 專業教練
+            </b></h2>
           <p style="color:white; text-align:start; padding: 0 80px 55px ; line-height: 30px;"> 教學資歷:<br />
             中華民國冰球協會Ａ、Ｂ、Ｃ級教練<br />
             台北市溜冰協會Ｃ級教練<br />
