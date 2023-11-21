@@ -20,8 +20,7 @@ if (isset($_POST["submit"])) {
     $mailFromName = $name;
     // $mailFrom = "=?UTF-8?B?" . base64_encode($_POST["email"]) . "?= <" . $email . ">";
     $mailSubject = "活動報名表單";
-    $mailContent = "報名人姓名: " . $name . "
-    年齡: " . $age . "連絡電話: " . $phone . "連絡信箱: " . $email . "溜冰經驗: " . $exp . "報名課程: " . $level;
+    $mailContent = "報名人姓名: " . $name . "年齡: " . $age . "連絡電話: " . $phone . "連絡信箱: " . $email . "溜冰經驗: " . $exp . "報名課程: " . $level;
     $mailHeader = "From:" . $email . "\r\n";
     $mailHeader .= "Content-type:text/html;charset=UTF-8";
     //mail(收件者, 主旨, 內容, 信件標頭)

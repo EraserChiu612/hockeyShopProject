@@ -41,7 +41,7 @@
 		</div>
 
 		<div class="container">
-			<form action="mail.php" method="post" id="addForm">
+			<form id="addForm" action="mail.php" method="post">
 				<div class="row row-cols-2">
 					<div class="col">
 						<div class="row g-0 mb-3">
