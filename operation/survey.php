@@ -110,7 +110,7 @@
 	<script type="text/javascript">
 		$('#addForm').submit(function(event) {
 
-			// event.preventDefault()
+			event.preventDefault()
 
 			var name = $('#name').val()
 			var age = $('#age').val()
