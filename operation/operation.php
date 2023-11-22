@@ -29,7 +29,7 @@ require_once '../layout/navbar.php';
             1. 基礎溜冰 2. 手腳並用之溜冰進階 -- 曲棍球 (須具備基本自主滑冰能力, 跌倒可自行站立) <br />
             年齡: 3歲半以上-成人 <br />
             地點: 台北小巨蛋冰上樂園 (台北市南京東路4段2號2樓)</p>
-          <button type="button" class="btn btn-info btn-lg my-3">sign up now</button>
+          <button type="button" class="btn  btn-lg my-3 text-white" style="background-color: #FF5C00;">sign up now</button>
 
         </div>
       </div>

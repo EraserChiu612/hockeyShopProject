@@ -23,11 +23,15 @@
 				height: 640px;
 				background-color: white;
 				position: absolute;
+				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				border-radius: 10px;
 			">
+        <div class="quit">
+            <i class="bi bi-x-square fs-2 " style="position: absolute;  right:20px; top:20px; color:lightgray"></i>
+        </div>
 		<div class="head" style="margin: 50px 100px">
 			<p style="font-size: 24px; margin-bottom: 30px">
 				時間: 每週四晚上 (即日起-113/01/18)<br />

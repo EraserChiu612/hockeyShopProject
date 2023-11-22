@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: black;
+  font-family: 'Heebo', sans-serif;
 }
 
 /* logo */
@@ -45,7 +46,7 @@ body {
 
 .search-position {
   position: absolute;
-  color: gray;
+  color: grey;
   top: 4px;
   right: 75px;
   font-size: 20px;
@@ -131,7 +132,7 @@ a.nav-link.dropdown-toggle::after {
   text-align: center;
   text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
   font-family: Inter;
-  font-size: 40 px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 123.5%;
@@ -298,33 +299,31 @@ emailsection {
 
 /* 首頁結束 */
 /* about開始 */
-.p-text {
-  margin-left: 5%;
+.about-title {
+  font-family: 'Anton', sans-serif;
   color: #FFF;
-  text-shadow: 0px 7.866599082946777px 7.7092671394348145px rgba(0, 0, 0, 0.42);
-  font-family: Anton;
-  font-size: 133.271px;
-  font-style: normal;
+  text-shadow: 0 7px 7px rgba(0, 0, 0, 0.42);
+  margin-right: 50%;
+  margin-left: -10%;
+  font-size: 133px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 10.662px;
+  letter-spacing: 10px;
+  white-space:nowrap;
 }
 
-.p-text-small {
+.about-text {
   margin-left: 15%;
   color: #FFF;
-  text-shadow: 0px 1.6359999179840088px 1.6032800674438477px rgba(0, 0, 0, 0.42);
-  font-family: Inter;
-  font-size: 27.716px;
+  font-size: 27px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2.217px;
 }
 
-.service {
+.about-service {
   color: #FF5C00;
-  font-family: Anton;
   font-size: 54.239px;
   font-style: normal;
   font-weight: 400;
@@ -341,8 +340,8 @@ emailsection {
 
 .GEAR {
   color: white;
-  font-size: 92.64px;
-  font-family: Anton;
+  font-size: 92px;
+  font-family: 'Anton', sans-serif;
   font-weight: 400;
   letter-spacing: 4.63px;
   word-wrap: break-word;
@@ -350,16 +349,16 @@ emailsection {
 
 .rect-gear {
   background-color: #FF5C00;
-  width: 280px;
+  width: 200px;
   height: 50px;
-  margin-top: -15%;
+  margin-top: -10%;
   margin-left: -1%;
 }
 
 .TEAM {
   color: white;
-  font-size: 92.64px;
-  font-family: Anton;
+  font-size: 92px;
+  font-family: 'Anton', sans-serif;
   font-weight: 400;
   letter-spacing: 4.63px;
   word-wrap: break-word;
@@ -367,15 +366,16 @@ emailsection {
 
 .rect-team {
   background-color: #FF5C00;
-  width: 280px;
+  width: 220px;
   height: 50px;
-  margin-top: -15%;
+  margin-top: -10%;
+  z-index: -1;
 }
 
 .customize {
   color: white;
-  font-size: 87.62px;
-  font-family: Anton;
+  font-size: 87px;
+  font-family: 'Anton', sans-serif;
   font-weight: 400;
   letter-spacing: 4.63px;
   word-wrap: break-word;
@@ -383,9 +383,9 @@ emailsection {
 
 .rect-customize {
   background-color: #FF5C00;
-  width: 537px;
+  width: 400px;
   height: 50px;
-  margin-top: -15%;
+  margin-top: -10%;
 }
 
 /* about結束 */

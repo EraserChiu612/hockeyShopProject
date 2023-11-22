@@ -19,10 +19,11 @@ include_once "../layout/navbar.php";
             </div>
         </div>
         <!-- banner end -->
-        <div class="equipment mt-5">SHOP YOUR EQUIPMENT</div>
+<!--        shop item bar start-->
+        <div class="equipment " style="margin-top: 150px">SHOP YOUR EQUIPMENT</div>
         <div class="row justify-content-around text-center text-white">
             <div class="card col-4 bg-black">
-                <img src="../public/images/gloves-blue.png" class="card-img-top" alt="..."/>
+                <img src="../public/images/gloves-3.png" class="card-img-top" alt="..."/>
                 <div class="card-body">
                     <h3 class="card-title mb-3">SHOP PLAYER SICK</h3>
                     <h5 class="card-text mb-3">
@@ -33,7 +34,7 @@ include_once "../layout/navbar.php";
                 </div>
             </div>
             <div class="card col-4 bg-black">
-                <img src="../public/images/gloves-bw.png" class="card-img-top" alt="..."/>
+                <img src="../public/images/gloves-1.png" class="card-img-top" alt="..."/>
                 <div class="card-body">
                     <h3 class="card-title mb-3">SHOP PALEY GLOVES</h3>
                     <h5 class="card-text mb-3">
@@ -44,7 +45,7 @@ include_once "../layout/navbar.php";
                 </div>
             </div>
             <div class="card col-4 bg-black">
-                <img src="../public/images/gloves-navy.png" class="card-img-top" alt="..."/>
+                <img src="../public/images/gloves-2.png" class="card-img-top" alt="..."/>
                 <div class="card-body">
                     <h3 class="card-title mb-3">SHOP PRACTICE JERSEY</h3>
                     <h5 class="card-text mb-3">
@@ -55,6 +56,7 @@ include_once "../layout/navbar.php";
                 </div>
             </div>
         </div>
+<!--        shop item bar end-->
         <div class="emailsection mt-5">
             <div class="row">
                 <div class="col-6">
