@@ -2,7 +2,7 @@
 
 require_once '../layout/navbar.php';
 ?>
-<main style="width: 100vw; height: 100vh;" class="bg-white">
+<main style="width: 99vw; height: 90vh;" class="bg-white">
 	<div class="container">
 		<h2 class="text-black mb-4 fw-bold" style="padding-top: 70px">購物車</h2>
 		<table class="table">
@@ -33,8 +33,8 @@ require_once '../layout/navbar.php';
 					</td>
 					<td class="col-2 text-center">
 						<div class="quantity d-flex">
-							<input class="reduce border" type="submit" value="-" onclick="fnCount('-');" style="width: 70px" />
-							<input class="number border text-center" type="text" id="i_sum" name="n_sum" value="0" style="width: 48px" />
+							<input class="reduce border" type="submit" value="-" onclick="fnCount('-');" style="width: 48px" />
+							<input class="number border text-center" type="text" id="i_sum" name="n_sum" value="0" style="width: 70px" />
 							<input class="plus border" type="submit" value="+" onclick="fnCount('+')" style="width: 48px" />
 						</div>
 					</td>
@@ -83,5 +83,5 @@ require_once '../layout/navbar.php';
 </script>
 
 <?php
-require_once '../layout/footer.php';
+require_once '../layout/footer_black.php';
 ?>
