@@ -1,15 +1,6 @@
 <?php
 include_once "../layout/navbar.php";
 ?>
-<main>
-
-
-
-
-
-
-
-
   <main>
     <div class="container-fluid">
       <div class="new-product"></div>

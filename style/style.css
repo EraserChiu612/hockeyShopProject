@@ -1,617 +1,915 @@
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: black;
-  font-family: 'Heebo', sans-serif;
+    background-color: black;
+    font-family: 'Heebo', sans-serif;
 }
 
 /* logo */
 .navbar-dark .navbar-brand {
-  font-size: 26px;
-  color: #52FF00;
-  font-weight: 400;
-  font-family: Anton;
-  word-wrap: break-word;
+    font-size: 26px;
+    color: #52FF00;
+    font-weight: 400;
+    font-family: Anton;
+    word-wrap: break-word;
 }
 
 .navbar-dark .navbar-brand:hover {
-  color: #52FF00;
+    color: #52FF00;
 }
 
 .container-nav {
-  background-color: rgba(255, 253, 253, 0.18);
+    background-color: rgba(255, 253, 253, 0.18);
 }
 
 .ul-margin {
-  margin-left: 50px;
+    margin-left: 50px;
 }
 
 .search {
-  width: 300px;
-  position: relative;
+    width: 300px;
+    position: relative;
 }
 
 .icon {
-  font-size: 30px;
-  margin-right: 30px;
+    font-size: 30px;
+    margin-right: 30px;
 }
 
 .icons {
-  font-size: 30px;
-  margin-right: 30px;
+    font-size: 30px;
+    margin-right: 30px;
 }
 
 .search-position {
-  position: absolute;
-  color: grey;
-  top: 4px;
-  right: 75px;
-  font-size: 20px;
+    position: absolute;
+    color: grey;
+    top: 4px;
+    right: 75px;
+    font-size: 20px;
 }
 
 .search-input {
-  background: rgb(255, 255, 255, 0.24);
-  border: 0px;
-  border-radius: 50px;
-  margin-right: 60px;
+    background: rgb(255, 255, 255, 0.24);
+    border: 0px;
+    border-radius: 50px;
+    margin-right: 60px;
 }
 
 .navbar .nav-item .dropdown-menu {
-  display: none;
+    display: none;
 }
 
 .navbar .nav-item:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .navbar .nav-item .dropdown-menu {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 a.nav-link.dropdown-toggle::after {
-  display: none;
+    display: none;
 }
 
 .nav-item {
-  color: white;
+    color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+    color: white;
 }
 
 .nav-link:focus,
 .nav-link:hover {
-  color: white;
+    color: white;
 }
 
 .navbar-toggler-icon {
-  color: #FFF;
+    color: #FFF;
 }
 
 .shop {
-  color: white;
+    color: white;
 }
 
 .member {
-  color: white;
+    color: white;
 }
 
 .shop:hover {
-  color: white;
+    color: white;
 }
 
 .member:hover {
-  color: white;
+    color: white;
 }
 
 /* nav結束 */
 /* 首頁開始 */
 .banner {
-  width: 100vw;
-  height: 100vh;
-  background: url("../public/images/banner.JPG") no-repeat;
-  background-size: cover;
-  position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("../public/images/banner.JPG") no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .shop-now {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  width: 500px;
-  height: 340px;
-  background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 500px;
+    height: 340px;
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 .shop-now-h1 {
-  color: #FFF;
-  text-align: center;
-  text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
-  font-family: Inter;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 123.5%;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.5%;
 }
 
 .shop-now-p {
-  color: #FFF;
-  text-align: center;
-  text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 123.5%;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.5%;
 }
 
 .shop-now-button {
-  height: 30px;
-  width: 200px;
-  border: 0px;
-  border-radius: 50px;
+    height: 30px;
+    width: 200px;
+    border: 0px;
+    border-radius: 50px;
 }
 
 .shop-now-a {
-  width: 200px;
-  border-radius: 50px;
+    width: 200px;
+    border-radius: 50px;
 }
 
 .carousel-position {
-  width: 1440px;
-  height: 713px;
+    width: 1440px;
+    height: 713px;
 }
 
 /* .carousel-margin{
   margin-left: 11.5%;
 } */
 emailsection {
-  height: 91px;
+    height: 91px;
 }
 
 .design {
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.25rem;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .text-1 {
-  color: #FFF;
-  text-align: end;
-  font-family: Inter;
-  font-size: 25.233px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    color: #FFF;
+    text-align: end;
+    font-family: Inter;
+    font-size: 25.233px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .text-2 {
-  color: #FFF;
-  text-align: end;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin-top: 1rem;
+    color: #FFF;
+    text-align: end;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 1rem;
 }
 
 .text-3 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 25.233px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin-bottom: 1rem;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25.233px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 1rem;
 }
 
 .shop-section {
-  width: 1366px;
-  height: 615px;
+    width: 1366px;
+    height: 615px;
 }
 
 .equipment {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 26.66px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 1rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 26.66px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1rem;
 }
 
 .btn-orange {
-  background-color: #FF5C00;
+    background-color: #FF5C00;
 }
 
 .btn-orange:hover {
-  background-color: #FF5C00;
-  color: white;
+    background-color: #FF5C00;
+    color: white;
 }
 
 .customize-section {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 26.66px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 1rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 26.66px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1rem;
 }
 
 .customize-text {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 52px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 .customize-p {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .canonnpro-text {
-  font-family: Race Sport;
-  font-size: 47.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background: linear-gradient(90deg, #EA5719 0%, #F49A06 106.97%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-family: Race Sport;
+    font-size: 47.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #EA5719 0%, #F49A06 106.97%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .canonnpro-p {
-  width: 516px;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 31.81px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    width: 516px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 31.81px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /* 首頁結束 */
 /* about開始 */
 .about-title {
-  font-family: 'Anton', sans-serif;
-  color: #FFF;
-  text-shadow: 0 7px 7px rgba(0, 0, 0, 0.42);
-  margin-right: 50%;
-  margin-left: -10%;
-  font-size: 133px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 10px;
-  white-space:nowrap;
+    font-family: 'Anton', sans-serif;
+    color: #FFF;
+    text-shadow: 0 7px 7px rgba(0, 0, 0, 0.42);
+    margin-right: 50%;
+    margin-left: -10%;
+    font-size: 133px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 10px;
+    white-space: nowrap;
 }
 
 .about-text {
-  margin-left: 15%;
-  color: #FFF;
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2.217px;
+    margin-left: 15%;
+    color: #FFF;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.217px;
 }
 
 .about-service {
-  color: #FF5C00;
-  font-size: 54.239px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2.712px;
+    color: #FF5C00;
+    font-size: 54.239px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.712px;
 }
 
 .hori-line {
-  height: 5px;
-  width: 500px;
-  background-color: #FF5C00;
-  margin-top: -1%;
+    height: 5px;
+    width: 500px;
+    background-color: #FF5C00;
+    margin-top: -1%;
 }
 
 .GEAR {
-  color: white;
-  font-size: 92px;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-  letter-spacing: 4.63px;
-  word-wrap: break-word;
+    color: white;
+    font-size: 92px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4.63px;
+    word-wrap: break-word;
 }
 
 .rect-gear {
-  background-color: #FF5C00;
-  width: 200px;
-  height: 50px;
-  margin-top: -10%;
-  margin-left: -1%;
+    background-color: #FF5C00;
+    width: 200px;
+    height: 50px;
+    margin-top: -10%;
+    margin-left: -1%;
 }
 
 .TEAM {
-  color: white;
-  font-size: 92px;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-  letter-spacing: 4.63px;
-  word-wrap: break-word;
+    color: white;
+    font-size: 92px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4.63px;
+    word-wrap: break-word;
 }
 
 .rect-team {
-  background-color: #FF5C00;
-  width: 220px;
-  height: 50px;
-  margin-top: -10%;
-  z-index: -1;
+    background-color: #FF5C00;
+    width: 220px;
+    height: 50px;
+    margin-top: -10%;
+    z-index: -1;
 }
 
 .customize {
-  color: white;
-  font-size: 87px;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-  letter-spacing: 4.63px;
-  word-wrap: break-word;
+    color: white;
+    font-size: 87px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4.63px;
+    word-wrap: break-word;
 }
 
 .rect-customize {
-  background-color: #FF5C00;
-  width: 400px;
-  height: 50px;
-  margin-top: -10%;
+    background-color: #FF5C00;
+    width: 400px;
+    height: 50px;
+    margin-top: -10%;
 }
 
 /* about結束 */
 /* product開始 */
 .new-product {
-  width: 906px;
-  height: 327px;
-  background: linear-gradient(90deg, #000 0.05%, rgba(0, 0, 0, 0.20) 99.93%), url('../public/images/Rectangle_42.png'), lightgray 0px -73.5px / 100% 273.395% no-repeat;
-  background-size: cover;
-  margin-left: 45%;
+    width: 906px;
+    height: 327px;
+    background: linear-gradient(90deg, #000 0.05%, rgba(0, 0, 0, 0.20) 99.93%), url('../public/images/Rectangle_42.png'), lightgray 0px -73.5px / 100% 273.395% no-repeat;
+    background-size: cover;
+    margin-left: 45%;
 
 }
 
 .product-text {
-  margin-top: -10%;
-  text-align: center;
+    margin-top: -10%;
+    text-align: center;
 }
 
 .product-text-line {
-  background-color: #FF5C00;
-  width: 200px;
-  height: 5px;
-  text-align: center;
-  margin-top: -3%;
+    background-color: #FF5C00;
+    width: 200px;
+    height: 5px;
+    text-align: center;
+    margin-top: -3%;
 }
 
 .img-position {
-  height: 400px;
-  object-fit: cover;
+    height: 400px;
+    object-fit: cover;
 }
 
 .slider-position {
-  position: relative;
-  height: 700px;
+    position: relative;
+    height: 700px;
 }
 
 #btnPrev {
-  width: 30px;
-  height: 30px;
-  /* background-image: url("../images/icon/prev.png"); */
-  font-size: 30px;
-  background-color: white;
-  line-height: 28px;
-  border-radius: 50%;
-  position: absolute;
-  top: 35%;
-  left: 15px
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/prev.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 15px
 }
 
 #btnNext {
-  width: 30px;
-  height: 30px;
-  /* background-image: url("../images/icon/next.png"); */
-  font-size: 30px;
-  background-color: white;
-  line-height: 28px;
-  border-radius: 50%;
-  position: absolute;
-  top: 35%;
-  right: 5px;
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/next.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: 5px;
 }
 
 .left {
-  position: absolute;
-  width: 100%;
-  left: 0%;
-  transition: 1.5s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 1.5s;
 }
 
 .slider2-position {
-  position: relative;
-  height: 700px;
+    position: relative;
+    height: 700px;
 }
 
 #secbtnPrev {
-  width: 30px;
-  height: 30px;
-  /* background-image: url("../images/icon/prev.png"); */
-  font-size: 30px;
-  background-color: white;
-  line-height: 28px;
-  border-radius: 50%;
-  position: absolute;
-  top: 35%;
-  left: 15px;
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/prev.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 15px;
 }
 
 #secbtnNext {
-  width: 30px;
-  height: 30px;
-  /* background-image: url("../images/icon/next.png"); */
-  font-size: 30px;
-  background-color: white;
-  line-height: 28px;
-  border-radius: 50%;
-  position: absolute;
-  top: 35%;
-  right: 5px;
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/next.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: 5px;
 }
 
 .sec_left {
-  position: absolute;
-  width: 100%;
-  left: 0%;
-  transition: 1.5s;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    transition: 1.5s;
 }
 
-/* .bg-img{
-  background-image: url('../images/player1.jpg');
-  background-size: cover;
-  border-radius: 5px;
-}
-.btn-position{
-  position: absolute;
-  border-radius: 0;
-  height: 50px;
-  width: 150px;
-  line-height: 50px;
-  padding: 0;
-  top: 45%;
-  left: 30%;
-  transition: all .3s linear;
-}
-.btn-position p{
-  position: relative;
-  z-index:99;
-}
-.btn-position::before{
-  content: "";
-  width: 100%;
-  height: 0%;
-  display: block;
-  background-color: #000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all .3s ease;
-}
-.btn-position:hover{
-  color: #fff;
-}
-.btn-position:hover::before{
-  height: 100%;
-} */
 .bg-product {
-  background-color: black;
-  border: 0px;
+    background-color: black;
+    border: 0;
 }
 
 .bg-sec-product {
-  background-color: black;
-  border: 0px;
+    background-color: black;
+    border: 0;
 }
 
 .btn-opacity {
-  background: rgba(0, 0, 0, 0.80);
-  width: 428px;
-  margin-top: -30%;
-  margin-left: -4%;
+    background: rgba(0, 0, 0, 0.80);
+    width: 428px;
+    margin-top: -30%;
+    margin-left: -4%;
 }
 
 .all-product-text-line {
-  background-color: #FF5C00;
-  width: 150px;
-  height: 5px;
-  text-align: center;
-  margin-top: -1%;
-  margin-bottom: 1rem;
+    background-color: #FF5C00;
+    width: 150px;
+    height: 5px;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 1rem;
 }
 
 .body-product-text-line {
-  background-color: #FF5C00;
-  width: 220px;
-  height: 5px;
-  text-align: center;
-  margin-top: -3.5%;
-  margin-bottom: 3rem;
+    background-color: #FF5C00;
+    width: 220px;
+    height: 5px;
+    text-align: center;
+    margin-top: -3.5%;
+    margin-bottom: 3rem;
 }
 
 .body-height {
-  height: 600px;
+    height: 600px;
 }
 
 .card-title-body {
-  border-bottom: 5px solid #FF5C00;
-  width: 160px;
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
+    border-bottom: 5px solid #FF5C00;
+    width: 160px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 .card-title-text {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  /* 30px */
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
 }
 
 .card-title-btn {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  /* 30px */
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
 }
 
 .btn-outline-light:hover {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .stick {
-  margin-top: 40%;
+    margin-top: 40%;
 }
 
 /* product結束 */
-footer {
-  height: 50px;
-  background: white;
+/* shop_cannon開始 */
+.second-nav {
+    background-color: #5D5D5D;
+    height: 50px;
+
 }
+.second-nav-gap {
+    background-color: #FF5C00;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(65% 0, 100% 0, 35% 100%, 0% 100%);
+}
+
+.top-menu-ul {
+    padding: 1%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-menu-li {
+    display: flex;
+}
+
+.top-menu-li>a{
+    text-decoration: none;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+
+
+.quit {
+    padding: 50px;
+    height: 600px;
+    width: 400px;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.card-shop {
+    border-radius: 0;
+    background-color: black;
+}
+
+.hori-line-shop {
+    height: 5px;
+    width: 300px;
+    background-color: #FF5C00;
+    margin-top: -1%;
+}
+
+.text-h1 {
+    color: #FF5C00;
+}
+
+.flex-size {
+    width: 80px;
+}
+
+.add-to-cart {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-intorduct {
+    color: white;
+    font-family: Anton;
+    font-size: 54.239px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.712px;
+}
+
+.hori-line-intorduct {
+    height: 5px;
+    width: 400px;
+    background-color: #FF5C00;
+    margin-top: -1%;
+}
+
+.ract {
+    height: 595px;
+    width: 1058px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.slider-onlineshop-cannon {
+    position: relative;
+    height: 530px;
+}
+
+#cannonbtnPrev {
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/prev.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+#cannonbtnNext {
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/next.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+
+.cannon_left {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 1.5s;
+}
+
+.cannon-position {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* onlineshop_cannon結束 */
+/* onlineshop_glove開始 */
+.slider-onlineshop-glove {
+    position: relative;
+    height: 530px;
+}
+
+#glovebtnPrev {
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/prev.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+#glovebtnNext {
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/next.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+
+.glove_left {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    transition: 1.5s;
+}
+.glove-position{
+    height: 400px;
+    object-fit: cover;
+}
+.hori-line-glove {
+    height: 5px;
+    width: 220px;
+    background-color: #FF5C00;
+    margin-top: -1%;
+}
+.money-box{
+    width: 150px;
+    height: 50px;
+}
+.color-box{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.color-button{
+    width: 90px;
+    height: 90px;
+}
+.btn-check:checked+.btn-light{
+    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
+}
+.btn-check:focus+.btn, .btn:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
+}
+.size-box{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* onlineshop_glove結束 */
+/* onlineshop_dagger開始 */
+.text-dagger{
+    color: #52FF00;
+}
+/* onlineshop_dagger結束 */
+/* onlineshop_jersey開始 */
+.hori-line-jersey{
+    height: 5px;
+    width: 250px;
+    background-color: #FF5C00;
+    margin-top: -1%;
+}
+.box-gray{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #C8C7C7;
+    background-color: gray;
+    overflow: hidden;
+    margin-right: 10%;
+}
+.box-black{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #C8C7C7;
+    background-color: black;
+    overflow: hidden;
+    margin-right: 10%;
+}
+.box-red{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #C8C7C7;
+    background-color: red;
+    overflow: hidden;
+    margin-right: 10%;
+}
+.box-navy{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #C8C7C7;
+    background-color: #001854;
+    overflow: hidden;
+    margin-right: 10%;
+}
+.box-white{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #C8C7C7;
+    background-color: white;
+    overflow: hidden;
+    margin-right: 10%;
+}
+.margin-jersey{
+    margin-top: 10%;
+}
+
+input[type='radio'] {
+    accent-color: orange;
+}
+
+
+.slider-onlineshop-jersey {
+    position: relative;
+    height: 530px;
+}
+
+#jerseybtnPrev {
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/prev.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+#jerseybtnNext {
+    width: 30px;
+    height: 30px;
+    /* background-image: url("../images/icon/next.png"); */
+    font-size: 30px;
+    background-color: white;
+    line-height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+
+.jersey_left {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    transition: 1.5s;
+}
+.jersey-position{
+    height: 400px;
+    object-fit: cover;
+}
+
+/*contact 開始*/
+.contact-title {
+    font-size: 24px;
+    border-bottom: 1px solid #ff5c00;
+    text-align-last: right;
+
+}
+
+/*contact 結束*/
+/*footer 開始*/
+footer {
+    height: 50px;
+    background: white;
+}
+
+/*footer 結束*/
