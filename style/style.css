@@ -54,7 +54,7 @@ body {
 
 .search-input {
     background: rgb(255, 255, 255, 0.24);
-    border: 0px;
+    border: 0;
     border-radius: 50px;
     margin-right: 60px;
 }
@@ -152,7 +152,7 @@ a.nav-link.dropdown-toggle::after {
 .shop-now-button {
     height: 30px;
     width: 200px;
-    border: 0px;
+    border: 0;
     border-radius: 50px;
 }
 
@@ -806,7 +806,7 @@ emailsection {
     width: 50px;
     border-radius: 50%;
     border: 3px solid #C8C7C7;
-    background-color: gray;
+    background-color: grey;
     overflow: hidden;
     margin-right: 10%;
 }
