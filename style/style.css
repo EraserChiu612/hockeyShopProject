@@ -1,4 +1,10 @@
-html {
+@font-face {
+    font-family: "Race Sport";
+    src: url("../public/font/Race Sport.ttf") format('truetype');
+
+}
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -10,10 +16,11 @@ body {
 
 /* logo */
 .navbar-dark .navbar-brand {
-    font-size: 26px;
+    font-family: "Race Sport";
+    font-size: 36px;
     color: #52FF00;
     font-weight: 400;
-    font-family: Anton;
+
     word-wrap: break-word;
 }
 
@@ -169,7 +176,7 @@ a.nav-link.dropdown-toggle::after {
 /* .carousel-margin{
   margin-left: 11.5%;
 } */
-emailsection {
+.signup-invite {
     height: 91px;
 }
 
@@ -276,7 +283,7 @@ emailsection {
 }
 
 .canonnpro-text {
-    font-family: Race Sport;
+    font-family: "Race Sport";
     font-size: 47.3px;
     font-style: normal;
     font-weight: 400;
@@ -806,7 +813,7 @@ emailsection {
     width: 50px;
     border-radius: 50%;
     border: 3px solid #C8C7C7;
-    background-color: gray;
+    background-color: grey;
     overflow: hidden;
     margin-right: 10%;
 }
