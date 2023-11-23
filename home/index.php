@@ -14,7 +14,7 @@ include_once "../layout/navbar.php";
                 </p>
                 <p class="shop-now-p">Target shoot scored</p>
                 <div class="text-center">
-                    <a href="" class="btn btn-light text-black shop-now-a">SHOP NOW</a>
+                    <a href="../shop/product.php" class="btn btn-light text-black shop-now-a">SHOP NOW</a>
                 </div>
             </div>
         </div>
@@ -25,39 +25,40 @@ include_once "../layout/navbar.php";
             <div class="card col-4 bg-black">
                 <img src="../public/images/gloves-3.png" class="card-img-top" alt="..."/>
                 <div class="card-body">
-                    <h3 class="card-title mb-3">SHOP PLAYER SICK</h3>
-                    <h5 class="card-text mb-3">
+                    <h3 class="card-title mb-3 text-white">SHOP PLAYER SICK</h3>
+                    <h5 class="card-text mb-3 text-white">
                         THE MOST POWERFUL STICK<br/>
                         STRONG FAST FIRE UP
                     </h5>
-                    <a href="#" class="btn btn-orange">SHOP NOW</a>
+                    <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
                 </div>
             </div>
             <div class="card col-4 bg-black">
                 <img src="../public/images/gloves-1.png" class="card-img-top" alt="..."/>
                 <div class="card-body">
-                    <h3 class="card-title mb-3">SHOP PALEY GLOVES</h3>
-                    <h5 class="card-text mb-3">
+                    <h3 class="card-title mb-3 text-white">SHOP PALEY GLOVES</h3>
+                    <h5 class="card-text mb-3 text-white">
                         THE BEST HOCKEY GLOVES<br/>
                         YOU CAN HAVE
                     </h5>
-                    <a href="#" class="btn btn-orange">SHOP NOW</a>
+                    <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
                 </div>
             </div>
             <div class="card col-4 bg-black">
                 <img src="../public/images/gloves-2.png" class="card-img-top" alt="..."/>
                 <div class="card-body">
-                    <h3 class="card-title mb-3">SHOP PRACTICE JERSEY</h3>
-                    <h5 class="card-text mb-3">
+                    <h3 class="card-title mb-3 text-white">SHOP PRACTICE JERSEY</h3>
+                    <h5 class="card-text mb-3 text-white">
                         MAKE YOUR OWN HOCKEY<br/>
                         JERSEY FOR PRACTICE
                     </h5>
-                    <a href="#" class="btn btn-orange">SHOP NOW</a>
+                    <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
                 </div>
             </div>
         </div>
 <!--        shop item bar end-->
-        <div class="emailsection mt-5">
+<!--        signup invite start  -->
+        <div class="signup-invite my-5">
             <div class="row">
                 <div class="col-6">
                     <div class="text-1">SIGN UP FOR OUR MEMBER</div>
@@ -71,7 +72,7 @@ include_once "../layout/navbar.php";
                     <form>
                         <div class="mb-3">
                             <input type="email" class="design w-50" id="exampleInputEmail1"
-                                   aria-describedby="emailHelp"/>
+                                   placeholder="example@mail.com ..." />
                             <button type="submit" class="btn btn-primary ms-3">
                                 SIGN UP
                             </button>
@@ -80,6 +81,8 @@ include_once "../layout/navbar.php";
                 </div>
             </div>
         </div>
+        <!--        signup invite end  -->
+
         <div class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -116,15 +119,16 @@ include_once "../layout/navbar.php";
             </div>
         </div>
 
+
         <div class="customize-section mt-5 mb-5">CUSTOMIZED YOUR TEAM STICK</div>
-        <div class="d-flex text-center ms-5">
-            <div class="card col-6 bg-black">
+        <div class="d-flex text-center" style="margin-left: 150px">
+            <div class="card col-5 bg-black">
                 <img src="../public/images/stick.jpg" class="card-img-top" style="height: 350px" alt="..."/>
             </div>
             <div class="card-body col-6 text-start ms-3 bg-black">
                 <h5 class="card-title mb-3 customize-text">WHAT IS TEAM STICK</h5>
                 <p class="card-text mb-3 customize-p">
-                    YOU CAN CUSTOMIZED YOUR OWN TEAM COLOR, LOGO, NAME<br/>
+                    YOU CAN CUSTOMIZE YOUR OWN TEAM COLOR, LOGO, NAME<br/>
                     , NUMBER, IN ANY CURVE, FLEX, KICK POINT
                 </p>
                 <a href="#" class="btn btn-orange">SHOP NOW</a>
@@ -137,7 +141,7 @@ include_once "../layout/navbar.php";
             <div class="card-body col-6 text-start ms-3 bg-black">
                 <h5 class="card-title mb-3 canonnpro-text">CANNON PRO</h5>
                 <p class="card-text mb-3 canonnpro-p">
-                    YCannon Pro gaves you the power,<br/>
+                    YCannon Pro gives you the power,<br/>
                     all you need, we also have Cannon,<br/>
                     C5, Cannon C1 for you to choose.
                 </p>
