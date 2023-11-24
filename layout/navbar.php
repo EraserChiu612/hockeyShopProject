@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"-->
+<!--            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"-->
+<!--            crossorigin="anonymous"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <script src="../utils/jquery-3.7.1.min.js"></script>
 
@@ -31,24 +34,25 @@
             <span class="navbar-toggler-icon navbar-light"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-margin" data-bs-theme="dark">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-margin " data-bs-theme="dark">
                 <li class="nav-item ms-5">
-                    <a class="nav-link" href="../about/about.php">ABOUT</a>
+                    <a class="nav-link" href="../about/about.php"><span>ABOUT</span><p class="change-hover-after mb-0">關於我們</p></a>
                 </li>
                 <li class="nav-item  ms-5">
-                    <a class="nav-link" href="../shop/product.php">SHOP</a>
+                    <a class="nav-link" href="../shop/product.php"><span>SHOP</span><p class="change-hover-after mb-0">線上商店
+                        </p></a>
                 </li>
 
                 <li class="nav-item ms-5">
-                    <a class="nav-link" href="#">CUSTOMIZE</a>
+                    <a class="nav-link" href="#"><span>CUSTOMIZE</span><p class="change-hover-after mb-0">完全客製化</p></a>
                 </li>
                 <li class="nav-item dropdown ms-5">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        TEAM
+                       data-bs-toggle="dropdown" aria-expanded="false"><span>TEAM</span>
+                        <p class="change-hover-after mb-0">活動報名</p>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item " href="../operation/operation.php">Puck Moose Hockey俱樂部</a></li>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-white" href="../operation/operation.php">Puck Moose Hockey俱樂部</a></li>
                         <li>
                             <hr class="dropdown-divider"/>
                         </li>
@@ -58,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-5">
-                    <a class="nav-link" href="#">CONNECT</a>
+                    <a class="nav-link" href="../contact/connect.php"><span >CONNECT</span><p class="change-hover-after mb-0" >聯絡我們</p></a>
                 </li>
             </ul>
             <!--search bar start-->

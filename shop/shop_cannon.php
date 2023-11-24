@@ -50,21 +50,21 @@ include_once "../layout/second_navbar.php";
                             <h1 class="text-h1">CANNON</h1>
                             <div class="card-body p-0">
                                 <h5 class="card-title pt-1 text-white">
-                                    詳細說明詳細說明詳細說明詳細說明詳細說明詳細說明詳細說明詳細說明詳細說明詳細說明詳細說明</h5>
+                                    CANNON PRO 方形圓角桿身，搭配中彎曲點，在射門時發揮最大的爆發力 。</h5>
                                 <p class="card-text text-white mt-4">材質</p>
                                 <div class="d-flex  flex-nowrap">
                                     <input type="radio" class="btn-check" name="quality" id="quality1" checked>
                                     <label class="btn btn-light money-box me-3 p-0" for="quality1">SENIOR<br>
-                                        $8,000</label>
+                                        $5,800</label>
                                     <input type="radio" class="btn-check" name="quality" id="quality2">
                                     <label class="btn btn-light money-box me-3 p-0" for="qulity2">INTERMEDIATE <br>
-                                        $8,000</label>
+                                        $5,200</label>
                                     <input type="radio" class="btn-check" name="qulity" id="qulity3">
                                     <label class="btn btn-light money-box me-3 p-0" for="qulity3">JUNIOR <br>
-                                        $8,000</label>
+                                        $4,800</label>
                                     <input type="radio" class="btn-check" name="qulity" id="qulity4">
                                     <label class="btn btn-light money-box me-3 p-0" for="qulity4">YOUTH <br>
-                                        $8,000</label>
+                                        $4,600</label>
                                 </div>
                                 <div >
                                     <div>
@@ -90,13 +90,17 @@ include_once "../layout/second_navbar.php";
                                 <p class="card-text text-white mt-3">Flex</p>
                                 <div class="d-flex  flex-nowrap">
                                     <input type="radio" class="btn-check" name="Flex" id="Flex1" checked>
-                                    <label class="btn btn-light size-box me-3 p-0" for="Flex1">65S</label>
+                                    <label class="btn btn-light size-box me-3 p-0" for="Flex1">65</label>
                                     <input type="radio" class="btn-check" name="Flex" id="Flex2">
                                     <label class="btn btn-light size-box me-3 p-0" for="Flex2">70</label>
                                     <input type="radio" class="btn-check" name="Flex" id="Flex3">
-                                    <label class="btn btn-light size-box me-3 p-0" for="Flex3">77</label>
+                                    <label class="btn btn-light size-box me-3 p-0" for="Flex3">75</label>
                                     <input type="radio" class="btn-check" name="Flex" id="Flex4">
-                                    <label class="btn btn-light size-box me-3 p-0" for="Flex4">87</label>
+                                    <label class="btn btn-light size-box me-3 p-0" for="Flex4">80</label>
+                                    <input type="radio" class="btn-check" name="Flex" id="Flex4">
+                                    <label class="btn btn-light size-box me-3 p-0" for="Flex4">85</label>
+                                    <input type="radio" class="btn-check" name="Flex" id="Flex4">
+                                    <label class="btn btn-light size-box me-3 p-0" for="Flex4">90</label>
                                 </div>
                                 <button type="submit" class="btn btn-info btn-lg add-to-cart text-white" name="submit" id="submit" >ADD
                                         TO CART</button>
@@ -112,15 +116,11 @@ include_once "../layout/second_navbar.php";
                 <div class="hori-line-intorduct mb-5 mx-auto"></div>
             </div>
             <div class="row flex-column">
-                <div class="col text-center text-white">產品詳細介紹</div>
-                <div class="col text-center text-white">產品詳細介紹產品詳細介紹</div>
-                <div class="col text-center text-white">產品詳細介紹</div>
-                <div class="col text-center text-white">產品詳細介紹產品詳細介紹產品詳細介紹</div>
-                <div class="col text-center text-white">產品詳細介紹產品詳細介紹</div>
-                <div class="col text-center text-white">產品詳細介紹產品詳細介紹</div>
+                <div class="col text-center text-white" style="font-size: 24px;">圓角型桿身設計，搭配中彎曲點，以及全新的力量釋放技術，<br/>
+                    讓您在大拍射門時的爆發力達到更加的效果</div>
             </div>
             <div class="container-fluid mt-5">
-                <div class="ract mx-auto"></div>
+                <div class="ract mx-auto"><img src="../public/movie/gif1.gif" alt="" class="img-fluid"></div>
             </div>
         </div>
     </main>
