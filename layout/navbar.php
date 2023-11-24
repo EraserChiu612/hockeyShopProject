@@ -72,7 +72,7 @@
             <!--cart & login-->
 
             <a href="../shop/cart.php" type="button" class="shop me-0" style="text-decoration:none"><i class="bi bi-cart2 icons"><span
-                            class="fs-5" style="background-color: white;color:black; padding:0 4px 0 2px; border-radius: 2px">0</span></i></a>
+                            class="fs-5" style="background-color: white;color:black; padding:0 5px 0 2px; border-radius: 2px; margin-left: 4px;" >0</span></i></a>
             <a href="" type="button" class="member pt-2 "><i class="bi bi-person icon "></i></a>
 
         </div>
