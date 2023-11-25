@@ -2,9 +2,9 @@
 include_once "../layout/navbar.php";
 ?>
 
-<main style="height: 100vh;"   >
+<main style="height: 120vh; background-image: url('../public/images/contact01.png'); background-size: cover"   >
     <div class="container d-flex text-white" >
-        <div class="d-flex flex-column align-items-end col-6" style="margin-top: 150px;">
+        <div class="d-flex flex-column align-items-end col-6 " style="margin-top: 150px;">
             <h2 class="mb-4 fw-bold" style="padding-top: 70px; color: #ff5c00; font-family: 'Anton', sans-serif ;letter-spacing: .1em;">Contact Us</h2>
             <p class="contact-title fw-bold" style="width: 60px; ">地址</p>
             <p style="text-align: end;">台市內湖區成功路四段<br/>

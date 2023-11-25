@@ -6,7 +6,7 @@ include_once "../layout/navbar.php";
         <div class="banner">
             <div class="shop-now">
                 <h1 class="shop-now-h1 mt-3">
-                    STRONG,FAST,FIRE UP<br/>THE NEW CANNON PRO<br/>GIVE YOU THE POWER<br/>YOU
+                    STRONG, FAST, FIRE UP<br/>THE NEW CANNON PRO<br/>GIVE YOU THE POWER<br/>YOU
                     NEED.
                 </h1>
                 <p class="shop-now-p">
@@ -19,45 +19,51 @@ include_once "../layout/navbar.php";
             </div>
         </div>
         <!-- banner end -->
-<!--        shop item bar start-->
+        <!--        shop item bar start-->
         <div class="equipment " style="margin-top: 150px">SHOP YOUR EQUIPMENT</div>
         <div class="row justify-content-around text-center text-white">
             <div class="card col-4 bg-black">
-                <img src="../public/images/gloves-3.png" class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <h3 class="card-title mb-3 text-white">SHOP PLAYER SICK</h3>
-                    <h5 class="card-text mb-3 text-white">
-                        THE MOST POWERFUL STICK<br/>
-                        STRONG FAST FIRE UP
-                    </h5>
-                    <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
+                <div class="card-boxshadow">
+                    <img src="../public/images/gloves-3.png" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h3 class="card-title mb-3 text-white">SHOP PLAYER SICK</h3>
+                        <h5 class="card-text mb-3 text-white">
+                            THE MOST POWERFUL STICK<br/>
+                            STRONG FAST FIRE UP
+                        </h5>
+                        <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-4 bg-black">
-                <img src="../public/images/gloves-1.png" class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <h3 class="card-title mb-3 text-white">SHOP PALEY GLOVES</h3>
-                    <h5 class="card-text mb-3 text-white">
-                        THE BEST HOCKEY GLOVES<br/>
-                        YOU CAN HAVE
-                    </h5>
-                    <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
+                <div class="card-boxshadow">
+                    <img src="../public/images/gloves-1.png" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h3 class="card-title mb-3 text-white">SHOP PALEY GLOVES</h3>
+                        <h5 class="card-text mb-3 text-white">
+                            THE BEST HOCKEY GLOVES<br/>
+                            YOU CAN HAVE
+                        </h5>
+                        <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-4 bg-black">
-                <img src="../public/images/gloves-2.png" class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <h3 class="card-title mb-3 text-white">SHOP PRACTICE JERSEY</h3>
-                    <h5 class="card-text mb-3 text-white">
-                        MAKE YOUR OWN HOCKEY<br/>
-                        JERSEY FOR PRACTICE
-                    </h5>
-                    <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
+                <div class="card-boxshadow">
+                    <img src="../public/images/gloves-2.png" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h3 class="card-title mb-3 text-white">SHOP PRACTICE JERSEY</h3>
+                        <h5 class="card-text mb-3 text-white">
+                            MAKE YOUR OWN HOCKEY<br/>
+                            JERSEY FOR PRACTICE
+                        </h5>
+                        <a href="../shop/product.php" class="btn btn-orange">SHOP NOW</a>
+                    </div>
                 </div>
             </div>
         </div>
-<!--        shop item bar end-->
-<!--        signup invite start  -->
+        <!--        shop item bar end-->
+        <!--        signup invite start  -->
         <div class="signup-invite my-5">
             <div class="row">
                 <div class="col-6">
@@ -72,7 +78,7 @@ include_once "../layout/navbar.php";
                     <form>
                         <div class="mb-3">
                             <input type="email" class="design w-50" id="exampleInputEmail1"
-                                   placeholder="example@mail.com ..." />
+                                   placeholder="example@mail.com ..."/>
                             <button type="submit" class="btn btn-primary ms-3">
                                 SIGN UP
                             </button>
@@ -93,7 +99,7 @@ include_once "../layout/navbar.php";
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             class="original" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-position">
+                <div class="carousel-position container-fluid">
                     <div class="carousel-inner carousel-margin">
                         <div class="carousel-item active" data-bs-interval="2000">
                             <img src="../public/images/first.jpg" class="img-fluid" style="width: 1440px" alt="..."/>

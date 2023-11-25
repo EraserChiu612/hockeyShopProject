@@ -15,6 +15,16 @@ body {
 }
 
 /* logo */
+.navbar {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #393939;
+}
+
+
+
 .navbar-dark .navbar-brand {
     font-family: "Race Sport";
     font-size: 36px;
@@ -28,9 +38,6 @@ body {
     color: #52FF00;
 }
 
-.container-nav {
-    background-color: rgba(255, 253, 253, 0.18);
-}
 
 .ul-margin {
     margin-left: 50px;
@@ -82,18 +89,38 @@ a.nav-link.dropdown-toggle::after {
     display: none;
 }
 
-.nav-item {
-    color: white;
-}
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.navbar-nav .change-hover {
     color: white;
 }
+
+a:hover span {
+    display: none;
+}
+
+.change-hover-after {
+    display: none;
+}
+
+.nav-link p {
+    color: #FF5c00;
+}
+
+a:hover span+p {
+    display: block;
+}
+
+.dropdown-item:hover {
+    color: #ff5c00 !important;
+    background-color: #212529 !important;
+}
+
+
 
 .navbar-toggler-icon {
     color: #FFF;
@@ -127,19 +154,21 @@ a.nav-link.dropdown-toggle::after {
 
 .shop-now {
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 500px;
-    height: 340px;
+    height: 350px;
     background-color: rgb(0, 0, 0, 0.5);
+
 }
 
 .shop-now-h1 {
     color: #FFF;
     text-align: center;
-    text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
-    font-family: Inter;
-    font-size: 40px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    font-weight: bolder;
+    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: 123.5%;
@@ -149,23 +178,24 @@ a.nav-link.dropdown-toggle::after {
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4.3976054191589355px 10.994013786315918px rgba(0, 0, 0, 0.44);
-    font-family: Inter;
+
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 123.5%;
 }
 
 .shop-now-button {
-    height: 30px;
-    width: 200px;
-    border: 0;
+    height: 50px;
+    width: 250px;
+    border: 0px;
     border-radius: 50px;
 }
 
 .shop-now-a {
     width: 200px;
-    border-radius: 50px;
+    border-radius: 60px;
+    font-weight: bolder;
 }
 
 .carousel-position {
@@ -398,16 +428,17 @@ a.nav-link.dropdown-toggle::after {
 /* about結束 */
 /* product開始 */
 .new-product {
-    width: 906px;
-    height: 327px;
-    background: linear-gradient(90deg, #000 0.05%, rgba(0, 0, 0, 0.20) 99.93%), url('../public/images/Rectangle_42.png'), lightgray 0px -73.5px / 100% 273.395% no-repeat;
-    background-size: cover;
-    margin-left: 45%;
+    height: 2600px;
+    background: url('../public/images/product_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-position: top;
+    z-index: -100;
 
 }
 
 .product-text {
-    margin-top: -10%;
     text-align: center;
 }
 
@@ -503,18 +534,19 @@ a.nav-link.dropdown-toggle::after {
 .bg-product {
     background-color: black;
     border: 0;
+    position: relative;
+    margin: 0;
 }
 
-.bg-sec-product {
-    background-color: black;
-    border: 0;
-}
+
 
 .btn-opacity {
-    background: rgba(0, 0, 0, 0.80);
-    width: 428px;
-    margin-top: -30%;
-    margin-left: -4%;
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0;
 }
 
 .all-product-text-line {
@@ -522,7 +554,7 @@ a.nav-link.dropdown-toggle::after {
     width: 150px;
     height: 5px;
     text-align: center;
-    margin-top: -1%;
+
     margin-bottom: 1rem;
 }
 
@@ -531,7 +563,6 @@ a.nav-link.dropdown-toggle::after {
     width: 220px;
     height: 5px;
     text-align: center;
-    margin-top: -3.5%;
     margin-bottom: 3rem;
 }
 
@@ -587,6 +618,7 @@ a.nav-link.dropdown-toggle::after {
     height: 50px;
 
 }
+
 .second-nav-gap {
     background-color: #FF5C00;
     margin-left: 5px;
@@ -607,7 +639,7 @@ a.nav-link.dropdown-toggle::after {
     display: flex;
 }
 
-.top-menu-li>a{
+.top-menu-li>a {
     text-decoration: none;
     color: #FFF;
     font-style: normal;
@@ -726,6 +758,7 @@ a.nav-link.dropdown-toggle::after {
 .slider-onlineshop-glove {
     position: relative;
     height: 530px;
+    overflow: hidden;
 }
 
 #glovebtnPrev {
@@ -760,55 +793,67 @@ a.nav-link.dropdown-toggle::after {
     left: 0%;
     transition: 1.5s;
 }
-.glove-position{
+
+.glove-position {
     height: 400px;
     object-fit: cover;
 }
+
 .hori-line-glove {
     height: 5px;
     width: 220px;
     background-color: #FF5C00;
     margin-top: -1%;
 }
-.money-box{
+
+.money-box {
     width: 150px;
     height: 50px;
 }
-.color-box{
+
+.color-box {
     width: 90px;
     height: 90px;
     object-fit: cover;
 }
-.color-button{
+
+.color-button {
     width: 90px;
     height: 90px;
 }
-.btn-check:checked+.btn-light{
+
+.btn-check:checked+.btn-light {
     box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
 }
-.btn-check:focus+.btn, .btn:focus{
+
+.btn-check:focus+.btn,
+.btn:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
 }
-.size-box{
+
+.size-box {
     width: 150px;
     height: 50px;
     line-height: 50px;
     text-align: center;
 }
+
 /* onlineshop_glove結束 */
 /* onlineshop_dagger開始 */
-.text-dagger{
+.text-dagger {
     color: #52FF00;
 }
+
 /* onlineshop_dagger結束 */
 /* onlineshop_jersey開始 */
-.hori-line-jersey{
+.hori-line-jersey {
     height: 5px;
     width: 250px;
     background-color: #FF5C00;
     margin-top: -1%;
 }
-.box-gray{
+
+.box-gray {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -817,7 +862,8 @@ a.nav-link.dropdown-toggle::after {
     overflow: hidden;
     margin-right: 10%;
 }
-.box-black{
+
+.box-black {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -826,7 +872,8 @@ a.nav-link.dropdown-toggle::after {
     overflow: hidden;
     margin-right: 10%;
 }
-.box-red{
+
+.box-red {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -835,7 +882,8 @@ a.nav-link.dropdown-toggle::after {
     overflow: hidden;
     margin-right: 10%;
 }
-.box-navy{
+
+.box-navy {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -844,7 +892,8 @@ a.nav-link.dropdown-toggle::after {
     overflow: hidden;
     margin-right: 10%;
 }
-.box-white{
+
+.box-white {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -853,13 +902,12 @@ a.nav-link.dropdown-toggle::after {
     overflow: hidden;
     margin-right: 10%;
 }
-.margin-jersey{
+
+.margin-jersey {
     margin-top: 10%;
 }
 
-input[type='radio'] {
-    accent-color: orange;
-}
+
 
 
 .slider-onlineshop-jersey {
@@ -896,10 +944,11 @@ input[type='radio'] {
 .jersey_left {
     position: absolute;
     width: 100%;
-    left: 0%;
+    left: 0;
     transition: 1.5s;
 }
-.jersey-position{
+
+.jersey-position {
     height: 400px;
     object-fit: cover;
 }
@@ -915,8 +964,66 @@ input[type='radio'] {
 /*contact 結束*/
 /*footer 開始*/
 footer {
+    width: 100vw;
     height: 50px;
     background: white;
 }
 
 /*footer 結束*/
+
+/*anima use*/
+.ins-link,
+.ins-link:hover {
+    color: #000;
+}
+
+/* 圖片陰影動畫效果 */
+.card-boxshadow {
+    transform: scaleX(1);
+    transition: all 0.6s;
+}
+
+.card-boxshadow:hover {
+    transform: scaleX(1.05);
+    box-shadow: 4px 4px 7px rgba(100, 83, 83, 0.7), -4px -4px 7px rgba(100, 83, 83, 0.7), 4px -4px 7px rgba(100, 83, 83, 0.7), -4px 4px 7px rgba(100, 83, 83, 0.7);
+    padding: 0px;
+    z-index: 1;
+}
+
+.btn-orange {
+    display: inline-block;
+    text-decoration: none;
+
+    letter-spacing: 2px;
+    color: #FFF !important;
+    outline: 2px solid #FF5C00;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color .5s;
+    border: 0px;
+}
+
+.btn-orange:hover {
+    color: #FF5C00 !important;
+}
+
+.btn-orange:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 200%;
+    height: 100%;
+    background-color: #fff;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform .5s;
+    border: 0px;
+}
+
+.btn-orange:hover:before {
+    transform: scaleX(1) skewX(35deg) !important;
+}
