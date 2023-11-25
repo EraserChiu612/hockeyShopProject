@@ -230,8 +230,8 @@ a:hover span+p {
 .text-1 {
     color: #FFF;
     text-align: end;
-    font-family: Inter;
-    font-size: 25.233px;
+    font-family: "Race Sport";
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -249,9 +249,10 @@ a:hover span+p {
 }
 
 .text-3 {
+    padding-top: 15px;
     color: #FFF;
     font-family: Inter;
-    font-size: 25.233px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -953,6 +954,69 @@ a:hover span+p {
     object-fit: cover;
 }
 
+/* customize開始 */
+.customize_banner {
+    position: relative;
+}
+
+.customize_banner p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 120px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.80);
+    text-shadow: 4px 6px 9.5px rgba(0, 0, 0, 0.69);
+}
+
+.customize_banner p>span {
+    color: #FF5C00;
+}
+
+.text-customize-header {
+    color: #FF5C00;
+    font-family: Inter;
+    text-align: center;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 70px 0px;
+}
+
+.text-customize-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.circle {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #FF5C00;
+}
+
+.rectangle {
+    height: 80px;
+    width: 3px;
+    background-color: #FF5C00;
+    margin-left: 4px;
+}
+
+
+
+.customize-button {
+
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* customize結束 */
 /*contact 開始*/
 .contact-title {
     font-size: 24px;

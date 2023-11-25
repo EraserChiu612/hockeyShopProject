@@ -5,6 +5,11 @@
         <div><a href="" class="ins-link"><i class="bi bi-instagram ms-3 me-5"></i></a></div>
     </div>
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 require_once '../layout/navbar.php';
 ?>
-<main>
+<main class="pb-5">
   <div class="container-fluid text-center">
     <div class="row ">
       <div class="col-12 py-5" style="background-image: url('../public/images/child02.png');  background-repeat:no-repeat">
@@ -29,23 +29,23 @@ require_once '../layout/navbar.php';
             1. 基礎溜冰 2. 手腳並用之溜冰進階 -- 曲棍球 (須具備基本自主滑冰能力, 跌倒可自行站立) <br />
             年齡: 3歲半以上-成人 <br />
             地點: 台北小巨蛋冰上樂園 (台北市南京東路4段2號2樓)</p>
-          <button type="button" class="btn  btn-lg my-3 text-white" style="background-color: #FF5C00;">sign up now</button>
+          <button type="button" class="btn btn-orange btn-lg my-4 ">sign up now</button>
 
         </div>
       </div>
-      <div class="col-6 ">
+      <div class="col-6" data-aos="flip-up">
         <img src="../public/images/IMG_9160.jpg" alt="" class="img-fluid">
       </div>
     </div>
     <div class="row">
-      <div class="col-12 mb-3">
+      <div class="col-12 my-5">
         <div style="border-bottom: 2px solid #52ff00; width: 121px; " class="mx-auto">
           <h3 class="pt-3 text-white mb-0">教練介紹</h3>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-6">
+      <div class="col-6" data-aos="flip-up">
         <img src="../public/images/IMG_1683.jpg" alt="" class=" img-fluid">
       </div>
       <div class="col-6">
@@ -84,7 +84,7 @@ require_once '../layout/navbar.php';
           </p>
         </div>
       </div>
-      <div class="col-6 ">
+      <div class="col-6" data-aos="flip-up">
         <img src="../public/images/IMG_1686.jpg" alt="" style="  object-position:top; overflow:hidden" class="img-fluid">
       </div>
     </div>
