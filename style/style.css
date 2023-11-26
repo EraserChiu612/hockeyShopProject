@@ -756,49 +756,6 @@ a:hover span+p {
 
 /* onlineshop_cannon結束 */
 /* onlineshop_glove開始 */
-.slider-onlineshop-glove {
-    position: relative;
-    height: 530px;
-    overflow: hidden;
-}
-
-#glovebtnPrev {
-    width: 30px;
-    height: 30px;
-    /* background-image: url("../images/icon/prev.png"); */
-    font-size: 30px;
-    background-color: white;
-    line-height: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 45%;
-    left: 15px;
-}
-
-#glovebtnNext {
-    width: 30px;
-    height: 30px;
-    /* background-image: url("../images/icon/next.png"); */
-    font-size: 30px;
-    background-color: white;
-    line-height: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 45%;
-    right: 5px;
-}
-
-.glove_left {
-    position: absolute;
-    width: 100%;
-    left: 0%;
-    transition: 1.5s;
-}
-
-.glove-position {
-    height: 400px;
-    object-fit: cover;
-}
 
 .hori-line-glove {
     height: 5px;

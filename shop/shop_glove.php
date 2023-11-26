@@ -81,7 +81,7 @@ include_once "../layout/second_navbar.php";
     </div>
   </div>
   <?php
-  include '../layout/slider.php'
+  include '../layout/sw_slider.php'
   ?>
 </main>
 

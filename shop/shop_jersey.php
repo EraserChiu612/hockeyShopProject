@@ -69,36 +69,9 @@ include_once "../layout/second_navbar.php";
             <div class="ract mx-auto"></div>
         </div>
     </div>
-    <div class="container-fluid slider-onlineshop-jersey mt-5">
-        <div class="w-100 mx-auto h-100">
-            <div class="overflow-hidden">
-                <div class="row flex-nowrap jersey_left ms-2 me-2">
-                    <div class="col-sm-4 mt-5">
-                        <div class="card mb-3 bg-sec-product">
-                            <img src="../public/images/player1.jpg" class="card-img-top jersey-position" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mt-5">
-                        <div class="card mb-3 bg-product">
-                            <img src="../public/images/player2.jpg" class="card-img-top jersey-position" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mt-5">
-                        <div class="card mb-3 bg-product">
-                            <img src="../public/images/player3.jpg" class="card-img-top jersey-position" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mt-5">
-                        <div class="card mb-3 bg-product">
-                            <img src="../public/images/player4.jpg" class="card-img-top jersey-position" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <i class="bi bi-chevron-compact-left" id="jerseybtnPrev"></i>
-                <i class="bi bi-chevron-compact-right" id="jerseybtnNext"></i>
-            </div>
-        </div>
-    </div>
+    <?php
+    include '../layout/sw_slider.php'
+    ?>
 </main>
 
 
