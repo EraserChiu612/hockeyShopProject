@@ -1,3 +1,21 @@
+<?php
+
+require_once "../utils/dbconnect.php";
+//購物車開始
+require_once "../utils/class.Cart.php";
+//購物車初始化
+$cart = new Cart([
+    // 可增加到購物車的商品最大值, 0 = 無限
+    'cartMaxItem' => 0,
+    // 可增加到購物車的每個商品數量最大值, 0 = 無限
+    'itemMaxQuantity' => 0,
+    // 不要使用cookie，關閉瀏覽器後購物車物品將消失
+    'useCookie' => false,
+]);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -36,24 +54,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-margin " data-bs-theme="dark">
                     <li class="nav-item ms-5">
-                        <a class="nav-link" href="../about/about.php"><span>ABOUT</span>
+                        <a class="nav-link" href="../about/about.php"><span class="chinese">ABOUT</span>
                             <p class="change-hover-after mb-0">關於我們</p>
                         </a>
                     </li>
                     <li class="nav-item  ms-5">
-                        <a class="nav-link" href="../shop/product.php"><span>SHOP</span>
+                        <a class="nav-link" href="../shop/product.php"><span class="chinese">SHOP</span>
                             <p class="change-hover-after mb-0">線上商店
                             </p>
                         </a>
                     </li>
 
                     <li class="nav-item ms-5">
-                        <a class="nav-link" href="../customization/customize.php"><span>CUSTOMIZE</span>
+                        <a class="nav-link" href="../customization/customize.php"><span class="chinese">CUSTOMIZE</span>
                             <p class="change-hover-after mb-0">完全客製化</p>
                         </a>
                     </li>
                     <li class="nav-item dropdown ms-5">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>TEAM</span>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="chinese">TEAM</span>
                             <p class="change-hover-after mb-0">活動報名</p>
                         </a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
@@ -67,7 +85,7 @@
                         </ul>
                     </li>
                     <li class="nav-item ms-5">
-                        <a class="nav-link" href="../contact/contact.php"><span>CONNECT</span>
+                        <a class="nav-link" href="../contact/contact.php"><span class="chinese">CONNECT</span>
                             <p class="change-hover-after mb-0">聯絡我們</p>
                         </a>
                     </li>
@@ -82,7 +100,7 @@
                 <!--search bar end-->
                 <!--cart & login-->
 
-                <a href="../shop/cart.php" type="button" class="shop me-0" style="text-decoration:none"><i class="bi bi-cart2 icons"><span class="fs-5" style="background-color: white;color:black; padding:0 5px 0 2px; border-radius: 2px; margin-left: 4px;">0</span></i></a>
+                <a href="../shop/cart.php" type="button" class="shop me-0" style="text-decoration:none"><i class="bi bi-cart2 icons"><span class="fs-5" style="background-color: white;color:black; padding:0 5px 0 2px; border-radius: 2px; margin-left: 4px;"><?php echo number_format($cart->getTotalQuantity()); ?></span></i></a>
                 <a href="" type="button" class="member pt-2 "><i class="bi bi-person icon "></i></a>
 
             </div>

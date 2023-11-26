@@ -77,7 +77,7 @@ include_once "../layout/navbar.php";
                     <div class="row flex-nowrap sec_left ms-2 me-2">
                         <div class="col-sm-4 mt-5">
                             <div class="card-boxshadow">
-                                <a href="">
+                                <a href="shop_cannon.php">
                                     <div class="card bg-product">
                                         <img src="../public/images/player1.jpg" class="card-img-top img-position"
                                              alt="...">
@@ -90,7 +90,7 @@ include_once "../layout/navbar.php";
                         </div>
                         <div class="col-sm-4 mt-5 ">
                             <div class="card-boxshadow">
-                                <a href="">
+                                <a href="shop_dagger.php">
                                     <div class="card  bg-product">
                                         <img src="../public/images/player2.jpg" class="card-img-top img-position"
                                              alt="...">
@@ -103,7 +103,7 @@ include_once "../layout/navbar.php";
                         </div>
                         <div class="col-sm-4 mt-5">
                             <div class="card-boxshadow">
-                                <a href="">
+                                <a href="shop_glove.php">
                                     <div class="card  bg-product">
                                         <img src="../public/images/player3.jpg" class="card-img-top img-position"
                                              alt="...">
@@ -116,7 +116,7 @@ include_once "../layout/navbar.php";
                         </div>
                         <div class="col-sm-4 mt-5">
                             <div class="card-boxshadow">
-                                <a href="">
+                                <a href="shop_jersey.php">
                                     <div class="card mb-3 bg-product">
                                         <img src="../public/images/player4.jpg" class="card-img-top img-position"
                                              alt="...">

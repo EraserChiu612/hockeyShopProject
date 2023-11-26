@@ -126,8 +126,8 @@ require_once '../layout/navbar.php';
                                 <div class="col-4"><img src="../public/images/cart01.png" alt="" style="width: 160px;"></div>
                                 <div class="col-4">
                                     <p class="items text-black"><?php echo $item['attributes']['pname']; ?><br></p>
-                                    <p class="content text-secondary">Hand:Left<br>
-                                        Family:Bauer<br>
+                                    <p class="content text-secondary">Hand:<span class="text-danger"><?php echo $item['attributes']['hand'] ?></span><br>
+                                        Locale:<span class="text-Info"><?php echo $item['attributes']['locale'] ?></span><br>
                                         Gender:Unisex<br></p>
                                 </div>
                                 <div class="col-1">

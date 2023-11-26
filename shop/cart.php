@@ -22,6 +22,8 @@ if (isset($_GET["cartaction"]) && ($_GET["cartaction"] == "update")) {
             $cart->update($product['id'], $_GET['qty'][$j], [
                 'price' => $product['attributes']['price'],
                 'pname' => $product['attributes']['pname'],
+                'locale' => $product['attributes']['locale'],
+                'hand' => $product['attributes']['hand'],
             ]);
         }
     }
@@ -43,13 +45,13 @@ if (isset($_GET["cartaction"]) && ($_GET["cartaction"] == "remove")) {
 
 require_once '../layout/navbar.php';
 ?>
-    <main style="width: 100vw; min-height: 85vh;" class="bg-white">
+<main style="width: 100vw; min-height: 100vh;" class="bg-white">
 
-        <div class="container">
-            <h2 class="text-black mb-4 fw-bold" style="padding-top: 70px">購物車</h2>
-            <?php if ($cart->getTotalitem() > 0) { ?>
-                <table class="table">
-                    <thead>
+    <div class="container">
+        <h2 class="text-black mb-4 fw-bold" style="padding-top: 70px">購物車</h2>
+        <?php if ($cart->getTotalitem() > 0) { ?>
+            <table class="table">
+                <thead>
                     <tr class="text-dark fs-5">
                         <th scope="col-3">商品</th>
                         <th scope="col-3"></th>
@@ -60,34 +62,30 @@ require_once '../layout/navbar.php';
 
                         <th scope="col-1 pe-0" style="padding-left: 41px">刪除</th>
                     </tr>
-                    </thead>
-                    <form action="" method="get">
-                        <tbody>
+                </thead>
+                <form action="" method="get">
+                    <tbody>
                         <?php
                         $allItems = $cart->getItems();
                         foreach ($allItems as $items) {
                             foreach ($items as $item) {
-                                ?>
+                        ?>
                                 <tr class="table" style="vertical-align: middle">
                                     <td class="col-3">
-                                        <img src="../public/images/cart01.png" alt=""/>
+                                        <img src="../public/images/cart01.png" alt="" />
                                     </td>
                                     <td class="col-3">
                                         <p class="items text-black" style="font-size: 24px">
-                                            <?php echo $item['attributes']['pname'] ?><br/>
+                                            <?php echo $item['attributes']['pname'] ?><br />
                                         </p>
                                         <p class="content text-secondary">
-                                            Hand:Left<br/>
-                                            Family:Bauer<br/>
-                                            Gender:Unisex<br/>
+                                            Hand:<span class="text-danger"><?php echo $item['attributes']['hand'] ?></span><br />
+                                            Locale:<span class="text-Info"><?php echo $item['attributes']['locale'] ?></span><br />
+                                            Gender:Unisex<br />
                                         </p>
                                     </td>
                                     <td class="col-1 text-center" style="padding-right: 60px">
-                                        <input type="hidden" name="updateid[]" id="updateid[]"
-                                                  value="<?php echo $item['id']; ?>"><input name=qty[] type="text"
-                                                                                            id="qty[]"
-                                                                                            value="<?php echo $item['quantity']; ?>"
-                                                                                            size="1">
+                                        <input type="hidden" name="updateid[]" id="updateid[]" value="<?php echo $item['id']; ?>"><input name=qty[] type="text" id="qty[]" value="<?php echo $item['quantity']; ?>" size="1">
                                         <!-- <div class="quantity d-flex">
                                             <input class="reduce border" type="submit" value="-" onclick="fnCount('-');" style="width: 48px" />
                                             <input class="number border text-center" type="text" id="i_sum" name="n_sum" value="0" style="width: 70px" />
@@ -97,56 +95,51 @@ require_once '../layout/navbar.php';
                                     <td class="col-2 fs-5 fw-bold" style="padding-left: 30px">
                                         $<?php echo number_format($item['attributes']['price']); ?>
                                     </td>
-                                    <td class="col-2 fs-5 fw-bold" >
-                                    $<?php echo number_format($item['quantity'] * $item['attributes']['price']); ?>
+                                    <td class="col-2 fs-5 fw-bold">
+                                        $<?php echo number_format($item['quantity'] * $item['attributes']['price']); ?>
                                     </td>
 
                                     <td class="col-1 pe-0 offset-2" style="padding-left: 50px">
-                                        <a href="?cartaction=remove&delid=<?php echo $item['id']; ?>"><i
-                                                    class="bi bi-trash3 fs-5 "></i></a>
+                                        <a href="?cartaction=remove&delid=<?php echo $item['id']; ?>"><i class="bi bi-trash3 fs-5 "></i></a>
                                     </td>
                                 </tr>
-                                <?php
+                        <?php
                             }
                         } ?>
-                        </tbody>
-                </table>
-                <div class="total">
-                    <div class="d-flex justify-content-end" style="margin-right: 0px">
-                        <p class="p-2">總共　　</p>
-                        <h2><?php echo number_format($cart->getTotalQuantity()); ?></h2>
-                        <p class="p-2">　　項</p>
-                    </div>
-                    <div class="d-flex justify-content-end" style="margin-right: 0px">
-                        <p class="p-2">總金額</p>
-                        <h2 class="fw-bold">$<?php echo number_format($cart->getAttributeTotal('price')); ?></h2>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <input type="hidden" name="cartaction" id="cartaction" value="update">
-                        <input type="submit" name="updatebtn" id="button2" class="btn btn-dark text-white text-center"
-                               style="width: 200px; height: 50px; margin-right: 20px" value="更新購物車">
-                        <input type="button" name="button" class="btn btn-dark text-white text-center"
-                               style="width: 200px; height: 50px" value="結帳"
-                               onclick="window.location.href='checkout.php'">
-
-                    </div>
+                    </tbody>
+            </table>
+            <div class="total">
+                <div class="d-flex justify-content-end" style="margin-right: 0px">
+                    <p class="p-2">總共　　</p>
+                    <h2><?php echo number_format($cart->getTotalQuantity()); ?></h2>
+                    <p class="p-2">　　項</p>
                 </div>
-                </form>
-            <?php } else { ?>
-                <div class=info>
-                    <p class="text-center fs-3">購物車內沒有商品</p>
-                    <div class="d-flex justify-content-center">
-                        <a href="product.php" class="btn btn-dark text-white text-center"
-                           style="width: 250px; height: 50px">
-                            前往購物
-                        </a>
-                    </div>
+                <div class="d-flex justify-content-end" style="margin-right: 0px">
+                    <p class="p-2">總金額</p>
+                    <h2 class="fw-bold">$<?php echo number_format($cart->getAttributeTotal('price')); ?></h2>
                 </div>
-            <?php } ?>
-        </div>
-    </main>
+                <div class="d-flex justify-content-end">
+                    <input type="hidden" name="cartaction" id="cartaction" value="update">
+                    <input type="submit" name="updatebtn" id="button2" class="btn btn-dark text-white text-center" style="width: 200px; height: 50px; margin-right: 20px" value="更新購物車">
+                    <input type="button" name="button" class="btn btn-dark text-white text-center" style="width: 200px; height: 50px" value="結帳" onclick="window.location.href='checkout.php'">
 
-    <!-- <script>
+                </div>
+            </div>
+            </form>
+        <?php } else { ?>
+            <div class=info>
+                <p class="text-center fs-3">購物車內沒有商品</p>
+                <div class="d-flex justify-content-center">
+                    <a href="product.php" class="btn btn-dark text-white text-center " style="width: 250px; height: 50px; line-height: 40px">
+                        前往購物
+                    </a>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
+</main>
+
+<!-- <script>
         function fnCount(oper) {
             var A = Number(i_A.value)
             var sum = Number(i_sum.value)

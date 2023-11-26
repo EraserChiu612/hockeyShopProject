@@ -96,9 +96,7 @@ include_once "../layout/second_navbar.php";
                                 <input type="radio" class="btn-check" name="Flex" id="Flex4">
                                 <label class="btn btn-light size-box me-3 p-0" for="Flex4">90</label>
                             </div>
-                            <button type="submit" class="btn btn-info btn-lg add-to-cart text-white" name="submit"
-                                    id="submit">ADD
-                                TO CART
+                            <button type="submit" class="btn btn-orange add-to-cart text-white mt-5" name="submit" id="submit">加入購物車
                             </button>
                         </div>
                 </div>

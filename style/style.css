@@ -99,7 +99,7 @@ a.nav-link.dropdown-toggle::after {
     color: white;
 }
 
-a:hover span {
+a:hover .chinese {
     display: none;
 }
 

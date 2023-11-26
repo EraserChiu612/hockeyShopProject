@@ -43,9 +43,11 @@ if (isset($_POST["customername"]) && ($_POST["customername"] != "")) {
 } else {
     echo "無法獲得處理";
 }
+
+$cart -> clear();
 ?>
 
-<!--<script language="javascript">-->
-<!--    alert("感謝您的購買,我們將盡速處理您的訂單");-->
-<!--    window.location.href = "../home/index.php";-->
-<!--</script>-->
+<script>
+    alert("感謝您的購買,我們將盡速處理您的訂單");
+    window.location.href = "../home/index.php";
+</script>

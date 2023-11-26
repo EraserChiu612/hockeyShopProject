@@ -11,26 +11,30 @@ $cart = new Cart([
     // 不要使用cookie，關閉瀏覽器後購物車物品將消失
     'useCookie' => false,
 ]);
+
+
+
 // 新增購物車內容
-
-
-
 if (isset($_GET["cartaction"]) && ($_GET["cartaction"] == "add")) {
 
-    $locate = $_GET['locate'];
+    $locale = $_GET['locale'];
     $hand = $_GET['hand'];
     $flex = $_GET['Flex'];
 
-    $query_product_id = "SELECT * FROM `product` WHERE`pd_locale` = '$locate' AND `pd_hand` = '$hand' AND `flex_id` = '$flex' AND`pd_kit_point` = '高'";
-    $result_product_id = mysqli_query($conn, $query_product_id);
-    while ($row_result = mysqli_fetch_assoc($result_product_id)) {
+    $query = "SELECT * FROM `product` WHERE`pd_locale` = '$locale' AND `pd_hand` = '$hand' AND `flex_id` = '$flex' AND`pd_kit_point` = '高'";
+    $result = mysqli_query($conn, $query);
+    while ($row_result = mysqli_fetch_assoc($result)) {
         $product_id = $row_result['product_id'];
         $price = $row_result['pd_price'];
         $pname = $row_result['pd_name'];
+        $locale = $row_result['pd_locale'];
+        $hand = $row_result['pd_hand'];
     }
     $cart->add($product_id, 1, [
         'price' => $price,
         'pname' => $pname,
+        'locale' => $locale,
+        'hand' => $hand,
     ]);
     header("Location: cart.php");
 
@@ -91,16 +95,16 @@ include_once "../layout/second_navbar.php";
                         <form action="shop_cannon.php" method="get">
                             <p class="card-text text-white mt-4">材質</p>
                             <div class="d-flex  flex-nowrap">
-                                <input type="radio" class="btn-check" name="quality" id="quality1" checked>
+                                <input type="radio" class="btn-check" name="quality" id="quality1" value="SENIOR" checked>
                                 <label class="btn btn-light money-box me-3 p-0" for="quality1">SENIOR<br>
                                     $5,800</label>
-                                <input type="radio" class="btn-check" name="quality" id="quality2">
+                                <input type="radio" class="btn-check" name="quality" id="quality2" value="INTERMEDIATE">
                                 <label class="btn btn-light money-box me-3 p-0" for="quality2">INTERMEDIATE <br>
                                     $5,200</label>
-                                <input type="radio" class="btn-check" name="quality" id="quality3">
+                                <input type="radio" class="btn-check" name="quality" id="quality3" value="JUNIOR">
                                 <label class="btn btn-light money-box me-3 p-0" for="quality3">JUNIOR <br>
                                     $4,800</label>
-                                <input type="radio" class="btn-check" name="quality" id="quality4">
+                                <input type="radio" class="btn-check" name="quality" id="quality4" value="YOUTH">
                                 <label class="btn btn-light money-box me-3 p-0" for="quality4">YOUTH <br>
                                     $4,600</label>
                             </div>
@@ -117,9 +121,9 @@ include_once "../layout/second_navbar.php";
                                 <div>
                                     <p class="card-text text-white mt-3">場地</p>
                                     <div class="d-flex  flex-nowrap">
-                                        <input type="radio" class="btn-check" name="locate" id="ice1" value="冰上" checked>
+                                        <input type="radio" class="btn-check" name="locale" id="ice1" value="冰上" checked>
                                         <label class="btn btn-light size-box me-3 p-0" for="ice1">冰上</label>
-                                        <input type="radio" class="btn-check" name="locate" value="陸地" id="ice2">
+                                        <input type="radio" class="btn-check" name="locale" value="陸地" id="ice2">
                                         <label class="btn btn-light size-box me-3 p-0" for="ice2">陸地</label>
                                     </div>
                                 </div>
@@ -135,18 +139,18 @@ include_once "../layout/second_navbar.php";
                                 <label class="btn btn-light size-box me-3 p-0" for="Flex3">75</label>
                                 <input type="radio" class="btn-check" name="Flex" id="Flex4" value="6">
                                 <label class="btn btn-light size-box me-3 p-0" for="Flex4">80</label>
-                                <input type="radio" class="btn-check" name="Flex" id="Flex4" value="7">
-                                <label class="btn btn-light size-box me-3 p-0" for="Flex4">85</label>
-                                <input type="radio" class="btn-check" name="Flex" id="Flex4" value="8">
-                                <label class="btn btn-light size-box me-3 p-0" for="Flex4">90</label>
+                                <input type="radio" class="btn-check" name="Flex" id="Flex5" value="7">
+                                <label class="btn btn-light size-box me-3 p-0" for="Flex5">85</label>
+                                <input type="radio" class="btn-check" name="Flex" id="Flex6" value="8">
+                                <label class="btn btn-light size-box me-3 p-0" for="Flex6">90</label>
                             </div>
                             <input type="hidden" name="cartaction" value="add" id="cartaction">
-                            <button type="submit" class="btn btn-info btn-lg add-to-cart text-white" name="submit" id="submit">ADD
-                                TO CART
+                            <button type="submit" class="btn btn-orange add-to-cart text-white mt-5" name="submit" id="submit">加入購物車
                             </button>
+                        </form>
                     </div>
                 </div>
-                </form>
+
             </div>
         </div>
     </div>
@@ -165,6 +169,34 @@ include_once "../layout/second_navbar.php";
         </div>
     </div>
 </main>
+
+<script>
+    $(function() {
+
+
+        // 監聽radio按鈕的變動
+        $("input[name='quality']").change(function() {
+            // 當選擇a時，啟用所有按鈕
+            if ($(this).val() === "SENIOR") {
+                $("input[name='Flex']").prop("disabled", false);
+            }
+            // 當選擇b時，禁用6.7.8
+            else if ($(this).val() === "INTERMEDIATE") {
+                $("input[value='6']").prop("disabled", true);
+                $("input[value='7']").prop("disabled", true);
+                $("input[value='8']").prop("disabled", true);
+            } else if ($(this).val() === "JUNIOR") {
+                $("input[name='Flex']").prop("disabled", false);
+            } else if ($(this).val() === "YOUTH") {
+                $("input[value='3']").prop("disabled", true);
+                $("input[value='4']").prop("disabled", true);
+                $("input[value='5']").prop("disabled", true);
+            }
+        });
+
+
+    })
+</script>
 <?php
 require_once '../layout/footer.php';
 ?>

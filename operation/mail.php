@@ -14,7 +14,7 @@ if (isset($_POST["submit"])) {
   //empty 驗證是否為空
   if (empty($name) || empty($age) || empty($phone) || empty($email) || empty($exp) || empty($level)) {
 
-    echo "<span class='form-error'>請填寫所有欄位</span>";
+    echo "<span style='color:red;'>請填寫所有欄位</span>";
   } else {
     $mailto = "roam_dog@hotmail.com";
     $mailFromName = $name;
@@ -25,9 +25,23 @@ if (isset($_POST["submit"])) {
     $mailHeader .= "Content-type:text/html;charset=UTF-8";
     //mail(收件者, 主旨, 內容, 信件標頭)
     if (mail($mailto, $mailSubject, $mailContent, $mailHeader)) {
-      echo "<span class='form-success'>郵件已經成功發送.</span>";
+      echo "<span style='font-size:22px; color:green;'>報名郵件已發送成功,<span class='count'>5</span>秒後回到首頁</span>";
+      echo "<script>
+        var count = 5;
+        var countdown = setInterval(function() {
+          $('.count').html(count);
+          count--;
+          if (count == 0) {
+            clearInterval(countdown);
+          }
+        }, 1000);
+
+        setTimeout(function() {
+          window.location.href = '../home/index.php';
+        }, 5000);
+        </script>";
     } else {
-      echo "<span class='form-error'>郵件發送失敗.</span>";
+      echo "<span style='color:red;'>郵件發送失敗.</span>";
     }
   }
 } else {
