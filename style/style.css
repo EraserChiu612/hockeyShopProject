@@ -756,7 +756,6 @@ a:hover span+p {
 
 /* onlineshop_cannon結束 */
 /* onlineshop_glove開始 */
-
 .hori-line-glove {
     height: 5px;
     width: 220px;
@@ -867,49 +866,6 @@ a:hover span+p {
 
 
 
-
-.slider-onlineshop-jersey {
-    position: relative;
-    height: 530px;
-}
-
-#jerseybtnPrev {
-    width: 30px;
-    height: 30px;
-    /* background-image: url("../images/icon/prev.png"); */
-    font-size: 30px;
-    background-color: white;
-    line-height: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 45%;
-    left: 15px;
-}
-
-#jerseybtnNext {
-    width: 30px;
-    height: 30px;
-    /* background-image: url("../images/icon/next.png"); */
-    font-size: 30px;
-    background-color: white;
-    line-height: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 45%;
-    right: 5px;
-}
-
-.jersey_left {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    transition: 1.5s;
-}
-
-.jersey-position {
-    height: 400px;
-    object-fit: cover;
-}
 
 /* customize開始 */
 .customize_banner {
