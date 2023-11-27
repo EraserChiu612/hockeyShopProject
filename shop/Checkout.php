@@ -16,7 +16,7 @@ $cart = new Cart([
 
 require_once '../layout/navbar.php';
 ?>
-<main style="width: 99vw; height: 120vh;" class="bg-white">
+<main style="width: 99vw; height: auto; padding-bottom:50px;" class="bg-white">
     <div class="container">
         <h2 class="text-black mb-4 fw-bold" style="padding-top: 70px;">結帳頁</h2>
         <div class="row align-items-start">
@@ -108,11 +108,11 @@ require_once '../layout/navbar.php';
                 </div>
 
                 <div class="border" style="padding: 22px 22px 0px 22px;">
-                    <div class="d-flex">
+                    <div class="d-flex mx-0">
                         <div class="col-4"></div>
                         <div class="col-4">品名</div>
                         <div class="col-1">數量</div>
-                        <div class="col-3 fw-bold">
+                        <div class="col-3  fw-bold" style="text-align: end">
                             小計
                         </div>
                     </div>
@@ -123,12 +123,12 @@ require_once '../layout/navbar.php';
                                 $i++;
                     ?>
                             <div class="row ">
-                                <div class="col-xl-4"><img src="../public/images/cart01.png" alt="" style=" max-width: 160px;"></div>
+                                <div class="col-2 col-xl-4 px-0"><img class="<?php echo $item['attributes']['hand'] ?>" src="../public/images/cart03.jpg" alt="" style=" max-width: 140px;"></div>
                                 <div class="col-4 ">
                                     <p class="items text-black"><?php echo $item['attributes']['pname']; ?><br></p>
                                     <p class="content text-secondary">Hand:<span class="text-danger"><?php echo $item['attributes']['hand'] ?></span><br>
                                         Locale:<span class="text-success"><?php echo $item['attributes']['locale'] ?></span><br>
-                                        Gender:Unisex<br></p>
+                                        Color:<span><?php echo $item['attributes']['color'] ?></span><br></p>
                                 </div>
                                 <div class="col-1">
                                     <?php echo $item['quantity']; ?>
@@ -153,6 +153,16 @@ require_once '../layout/navbar.php';
 
     </div>
 </main>
+
+
+<script>
+    //如果.items的文字中有"手套",則切換圖片
+    $(function() {
+        $(".無此值").attr("src", "../public/images/cart02.png");
+
+
+    });
+</script>
 
 <?php
 require_once '../layout/footer_black.php';

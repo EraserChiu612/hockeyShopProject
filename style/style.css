@@ -138,6 +138,14 @@ a:hover span+p {
     color: white;
 }
 
+.bi-person:hover {
+    color: #ff5c00;
+}
+
+.bi-cart2:hover {
+    color: #ff5c00;
+}
+
 .shop:hover {
     color: white;
 }
@@ -271,7 +279,6 @@ a:hover span+p {
 .equipment {
     color: #FFF;
     text-align: center;
-
     font-size: 26.66px;
     font-style: normal;
     font-weight: 600;
@@ -790,10 +797,10 @@ a:hover span+p {
     box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
 }
 
-/*.btn-check:focus+.btn,*/
-/*.btn:focus {*/
-/*    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);*/
-/*}*/
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
+}
 
 .size-box {
     width: 150px;

@@ -92,6 +92,10 @@ require_once '../layout/navbar.php';
   <?php
   require 'form.php'
   ?>
+  <?php
+  require_once '../layout/sw_slider_active.php';
+  ?>
+
 </main>
 <script>
   $(function() {

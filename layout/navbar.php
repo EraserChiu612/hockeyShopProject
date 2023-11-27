@@ -93,16 +93,18 @@ $cart = new Cart([
                     </li>
                 </ul>
                 <!--search bar start-->
-                <form class="d-flex search">
+                <div class="form search">
+                <form class="d-flex ">
                     <input class="form-control search-input" type="search" placeholder="SEARCH" aria-label="Search" />
                     <div>
                         <i class="bi bi-search search-position" type="button"></i>
                     </div>
                 </form>
+                </div>
                 <!--search bar end-->
                 <!--cart & login-->
 
-                <a href="../shop/cart.php" type="button" class="shop me-0" style="text-decoration:none"><i class="bi bi-cart2 icons"><span class="fs-5" style="background-color: white;color:black; padding:0 5px 0 2px; border-radius: 2px; margin-left: 4px;"><?php echo number_format($cart->getTotalQuantity()); ?></span></i></a>
+                <a href="../shop/cart.php" type="button" class="shop me-0" style="text-decoration:none;white-space:nowrap;"><i class="bi bi-cart2 icons "><span class="fs-5" style="background-color: white;color:black; padding:0 5px 0 2px; border-radius: 2px; margin-left: 4px;"><?php echo number_format($cart->getTotalQuantity()); ?></span></i></a>
                 <a href="" type="button" class="member pt-2 "><i class="bi bi-person icon "></i></a>
 
             </div>
@@ -112,12 +114,14 @@ $cart = new Cart([
     <!-- Path: layout/navbar.html -->
 
     <script>
-        //小於1200px時，search-bar消失
+        $(function(){
+        //小於1400px時，search-bar消失
         $(window).resize(function() {
-            if ($(window).width() < 1200) {
+            if ($(window).width() < 1400) {
                 $(".search").hide();
             } else {
                 $(".search").show();
             }
         });
+        })
     </script>

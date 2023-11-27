@@ -23,8 +23,8 @@ include_once "../layout/navbar.php";
     <!-- banner end -->
     <!--        shop item bar start-->
     <div class="equipment " style="margin-top: 150px">SHOP YOUR EQUIPMENT</div>
-    <div class="row justify-content-around text-center text-white">
-        <div class="card col-4 bg-black">
+    <div class="row justify-content-center text-center text-white">
+        <div class="card col-3 bg-black">
             <div class="card-boxshadow">
                 <img src="../public/images/gloves-3.png" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -37,7 +37,7 @@ include_once "../layout/navbar.php";
                 </div>
             </div>
         </div>
-        <div class="card col-4 bg-black">
+        <div class="card col-3 bg-black">
             <div class="card-boxshadow">
                 <img src="../public/images/gloves-1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -50,7 +50,7 @@ include_once "../layout/navbar.php";
                 </div>
             </div>
         </div>
-        <div class="card col-4 bg-black">
+        <div class="card col-3 bg-black">
             <div class="card-boxshadow">
                 <img src="../public/images/gloves-2.png" class="card-img-top" alt="..." />
                 <div class="card-body">

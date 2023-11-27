@@ -23,21 +23,21 @@ include_once "../layout/second_navbar.php";
                             <h5 class="card-title pt-1 text-white">
                                 APEX練習球衣，採用舒適與輕量化布料，讓您穿著時更舒適更輕盈</h5>
                             <p class="card-text text-white margin-jersey">Color</p>
-                            <div class="d-flex  flex-nowrap">
-                                <input type="radio" class="btn-check" name="color2" id="color2_1" checked>
-                                <label class="btn box-black p-0" for="color2_1"></label>
-                                <input type="radio" class="btn-check" name="color2" id="color2_2">
-                                <label class="btn  box-white p-0" for="color2_2"></label>
-                                <input type="radio" class="btn-check" name="color2" id="color2_3">
-                                <label class="btn  box-gray p-0" for="color2_3"></label>
-                                <input type="radio" class="btn-check" name="color2" id="color2_4">
-                                <label class="btn  box-navy p-0" for="color2_4"></label>
-                                <input type="radio" class="btn-check" name="color2" id="color2_5">
-                                <label class="btn  box-red p-0" for="color2_5"></label>
+                            <div class="d-flex  flex-nowrap " role="group">
+                                <input type="radio" class="btn-check" name="color" id="color1" checked>
+                                <label class="btn box-black p-0" for="color1"></label>
+                                <input type="radio" class="btn-check" name="color" id="color2">
+                                <label class="btn  box-white p-0" for="color2"></label>
+                                <input type="radio" class="btn-check" name="color" id="color3">
+                                <label class="btn  box-gray p-0" for="color3"></label>
+                                <input type="radio" class="btn-check" name="color" id="color4">
+                                <label class="btn  box-navy p-0" for="color4"></label>
+                                <input type="radio" class="btn-check" name="color" id="color5">
+                                <label class="btn  box-red p-0" for="color5"></label>
                             </div>
                             <div>
-                                <p class="card-text text-white margin-jersey">Size</p>
-                                <div class="d-flex  flex-nowrap">
+                                <p class="card-text text-white margin-jersey ">Size</p>
+                                <div class="d-flex  flex-nowrap" role="group">
                                     <input type="radio" class="btn-check" name="size2" id="size2_1" checked>
                                     <label class="btn btn-light size-box me-3 p-0" for="size2_1">S</label>
                                     <input type="radio" class="btn-check" name="size2" id="size2_2">
@@ -73,6 +73,10 @@ include_once "../layout/second_navbar.php";
     include '../layout/sw_slider.php'
     ?>
 </main>
+
+<script>
+
+</script>
 
 
 <?php

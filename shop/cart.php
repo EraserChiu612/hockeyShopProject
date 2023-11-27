@@ -24,6 +24,7 @@ if (isset($_GET["cartaction"]) && ($_GET["cartaction"] == "update")) {
                 'pname' => $product['attributes']['pname'],
                 'locale' => $product['attributes']['locale'],
                 'hand' => $product['attributes']['hand'],
+                'color' => $product['attributes']['color'],
             ]);
         }
     }
@@ -45,7 +46,7 @@ if (isset($_GET["cartaction"]) && ($_GET["cartaction"] == "remove")) {
 
 require_once '../layout/navbar.php';
 ?>
-<main style="width: 100vw; min-height: 100vh;" class="bg-white">
+<main style="width: 100vw; min-height: auto; padding-bottom:50px;" class="bg-white">
 
     <div class="container">
         <h2 class="text-black mb-4 fw-bold" style="padding-top: 70px">購物車</h2>
@@ -72,7 +73,7 @@ require_once '../layout/navbar.php';
                         ?>
                                 <tr class="table" style="vertical-align: middle">
                                     <td class="col-3">
-                                        <img src="../public/images/cart01.png" alt="" />
+                                        <img class="<?php echo $item['attributes']['hand'] ?>" src="../public/images/cart03.jpg" alt="" style="width:300px;" />
                                     </td>
                                     <td class="col-3">
                                         <p class="items text-black" style="font-size: 24px">
@@ -80,8 +81,8 @@ require_once '../layout/navbar.php';
                                         </p>
                                         <p class="content text-secondary">
                                             Hand:<span class="text-danger"><?php echo $item['attributes']['hand'] ?></span><br />
-                                            Locale:<span class="text-info"><?php echo $item['attributes']['locale'] ?></span><br />
-                                            Gender:Unisex<br />
+                                            Locale:<span class="text-success"><?php echo $item['attributes']['locale'] ?></span><br />
+                                            Color:<span><?php echo $item['attributes']['color'] ?></span><br />
                                         </p>
                                     </td>
                                     <td class="col-1 text-center" style="padding-right: 60px">
@@ -100,7 +101,7 @@ require_once '../layout/navbar.php';
                                     </td>
 
                                     <td class="col-1 pe-0 offset-2" style="padding-left: 50px">
-                                        <a href="?cartaction=remove&delid=<?php echo $item['id']; ?>"><i class="bi bi-trash3 fs-5 "></i></a>
+                                        <a style="color:darkgray" href="?cartaction=remove&delid=<?php echo $item['id']; ?>"><i class="bi bi-trash3 fs-5 "></i></a>
                                     </td>
                                 </tr>
                         <?php
@@ -139,21 +140,14 @@ require_once '../layout/navbar.php';
     </div>
 </main>
 
-<!-- <script>
-        function fnCount(oper) {
-            var A = Number(i_A.value)
-            var sum = Number(i_sum.value)
-            if (oper == '+') {
-                var myfunc = function(A) {
-                    return (sum = sum + A)
-                }
-            } else {
-                var myfunc = function(A) {
-                    return (sum = sum - A)
-                }
-            }
-        }
-    </script> -->
+<script>
+    //如果.items的文字中有"手套",則切換圖片
+    $(function() {
+        $(".無此值").attr("src", "../public/images/cart02.png");
+
+
+    });
+</script>
 
 <?php
 require_once '../layout/footer_black.php';
