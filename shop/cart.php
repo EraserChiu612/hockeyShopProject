@@ -80,7 +80,7 @@ require_once '../layout/navbar.php';
                                         </p>
                                         <p class="content text-secondary">
                                             Hand:<span class="text-danger"><?php echo $item['attributes']['hand'] ?></span><br />
-                                            Locale:<span class="text-Info"><?php echo $item['attributes']['locale'] ?></span><br />
+                                            Locale:<span class="text-info"><?php echo $item['attributes']['locale'] ?></span><br />
                                             Gender:Unisex<br />
                                         </p>
                                     </td>

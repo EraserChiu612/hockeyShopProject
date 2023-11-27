@@ -33,8 +33,8 @@ require_once '../layout/navbar.php';
 
         </div>
       </div>
-      <div class="col-6" data-aos="flip-up">
-        <img src="../public/images/IMG_9160.jpg" alt="" class="img-fluid">
+      <div class="col-6">
+        <img src="../public/images/IMG_9160.JPG" alt="" class="img-fluid">
       </div>
     </div>
     <div class="row">
@@ -45,8 +45,8 @@ require_once '../layout/navbar.php';
       </div>
     </div>
     <div class="row">
-      <div class="col-6" data-aos="flip-up">
-        <img src="../public/images/IMG_1683.jpg" alt="" class=" img-fluid">
+      <div class="col-6" data-aos="fade-right">
+        <img src="../public/images/coach1.png" alt="" class=" img-fluid">
       </div>
       <div class="col-6">
         <div class="coach" style="background-image: url('../public/images/bg-stone.png');">
@@ -84,8 +84,8 @@ require_once '../layout/navbar.php';
           </p>
         </div>
       </div>
-      <div class="col-6" data-aos="flip-up">
-        <img src="../public/images/IMG_1686.jpg" alt="" style="  object-position:top; overflow:hidden" class="img-fluid">
+      <div class="col-6" data-aos="fade-left">
+        <img src="../public/images/coach2.png" alt="" style="  object-position:top; overflow:hidden" class="img-fluid">
       </div>
     </div>
   </div>

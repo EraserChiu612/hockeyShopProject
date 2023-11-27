@@ -51,7 +51,7 @@ include_once "../layout/navbar.php";
               <div class="rectangle rectangle3"></div>
             </div>
           </div>
-          <div class="col-11 circle2">
+          <div class="col-11 circle2 ">
             <h3 class="text-white">第三步<br>定稿</h3>
           </div>
         </div>

@@ -5,7 +5,7 @@ include_once "../layout/navbar.php";
     <div class="container my-5">
         <div class="row">
             <div class="col-6">
-                <img src="../public/images/about.jpg" alt="" class="img-about" style="margin-left: 25%">
+                <img src="../public/images/about001.png" alt="" class="img-about ">
             </div>
             <div class="col-6">
                 <p class="about-title">ABOUT US</p>

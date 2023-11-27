@@ -125,32 +125,42 @@ include_once "../layout/navbar.php";
     <div class="customize-section mt-5 mb-5">CUSTOMIZED YOUR TEAM STICK</div>
     <div class="d-flex text-center" style="margin-left: 150px">
         <div class="card col-5 bg-black">
-            <img src="../public/images/stick.jpg" class="card-img-top" style="height: 350px" alt="..." />
+            <img src="../public/images/index02.png" class="card-img-top" style="height: 350px" alt="..." />
         </div>
         <div class="card-body col-6 text-start ms-3 bg-black">
             <h5 class="card-title mb-3 customize-text">WHAT IS TEAM STICK</h5>
             <p class="card-text mb-3 customize-p">
-                YOU CAN CUSTOMIZE YOUR OWN TEAM COLOR, LOGO, NAME<br />
-                , NUMBER, IN ANY CURVE, FLEX, KICK POINT
+                YOU CAN CUSTOMIZE YOUR OWN TEAM COLOR, LOGO,<br />
+                NAME, NUMBER, IN ANY CURVE, FLEX, KICK POINT
             </p>
             <a href="#" class="btn btn-orange">SHOP NOW</a>
         </div>
     </div>
-    <div class="d-flex text-center ms-5 mt-5">
-        <div class="card col-6 bg-black">
-            <video src="#"></video>
-        </div>
-        <div class="card-body col-6 text-start ms-3 bg-black">
-            <h5 class="card-title mb-3 canonnpro-text">CANNON PRO</h5>
-            <p class="card-text mb-3 canonnpro-p">
-                YCannon Pro gives you the power,<br />
-                all you need, we also have Cannon,<br />
-                C5, Cannon C1 for you to choose.
-            </p>
-            <a href="#" class="btn btn-orange">SHOP NOW</a>
+    <div class="container my-5">
+        <div class="row text-center ms-5 mt-5">
+            <div class="card-body col-5 text-end ms-3 bg-black">
+                <h5 class="card-title mb-3 canonnpro-text">CANNON PRO</h5>
+                <p class="card-text mb-3 canonnpro-p " style="margin-left: 25%;">
+                    YCannon Pro gives you the power,<br />
+                    all you need, we also have Cannon,<br />
+                    C5, Cannon C1 for you to choose.
+                </p>
+                <a href="#" class="btn btn-orange ">SHOP NOW</a>
+
+            </div>
+            <div class="card col-5 bg-black">
+                <img src="../public/movie/gif2.gif" alt="">
+            </div>
         </div>
     </div>
 </main>
+
+<script>
+
+</script>
+
+
+
 <?php
 require_once '../layout/footer.php';
 ?>

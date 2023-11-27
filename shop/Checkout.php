@@ -16,7 +16,7 @@ $cart = new Cart([
 
 require_once '../layout/navbar.php';
 ?>
-<main style="width: 99vw; height: 105vh;" class="bg-white">
+<main style="width: 99vw; height: 120vh;" class="bg-white">
     <div class="container">
         <h2 class="text-black mb-4 fw-bold" style="padding-top: 70px;">結帳頁</h2>
         <div class="row align-items-start">
@@ -122,12 +122,12 @@ require_once '../layout/navbar.php';
                             foreach ($items as $item) {
                                 $i++;
                     ?>
-                            <div class="d-flex">
-                                <div class="col-4"><img src="../public/images/cart01.png" alt="" style="width: 160px;"></div>
-                                <div class="col-4">
+                            <div class="row ">
+                                <div class="col-xl-4"><img src="../public/images/cart01.png" alt="" style=" max-width: 160px;"></div>
+                                <div class="col-4 ">
                                     <p class="items text-black"><?php echo $item['attributes']['pname']; ?><br></p>
                                     <p class="content text-secondary">Hand:<span class="text-danger"><?php echo $item['attributes']['hand'] ?></span><br>
-                                        Locale:<span class="text-Info"><?php echo $item['attributes']['locale'] ?></span><br>
+                                        Locale:<span class="text-success"><?php echo $item['attributes']['locale'] ?></span><br>
                                         Gender:Unisex<br></p>
                                 </div>
                                 <div class="col-1">
@@ -153,3 +153,7 @@ require_once '../layout/navbar.php';
 
     </div>
 </main>
+
+<?php
+require_once '../layout/footer_black.php';
+?>

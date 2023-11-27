@@ -48,32 +48,32 @@ $cart = new Cart([
 
 <body>
     <nav class="navbar navbar-expand-lg text-white container-nav navbar-dark">
-        <div class="container-fluid">
+        <div class="container-fluid   " style="padding: 0 10vw 0 10vw;">
             <a class="navbar-brand logo ms-3" href="../home/index.php">APEX</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon navbar-light"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-margin " data-bs-theme="dark">
-                    <li class="nav-item ms-5">
-                        <a class="nav-link" href="../about/about.php"><span class="chinese">ABOUT</span>
+                    <li class="nav-item ms-5 ">
+                        <a class="nav-link" href="../about/about.php" style="width: 80px"><span class="chinese">ABOUT</span>
                             <p class="change-hover-after mb-0">關於我們</p>
                         </a>
                     </li>
                     <li class="nav-item  ms-5">
-                        <a class="nav-link" href="../shop/product.php"><span class="chinese">SHOP</span>
+                        <a class="nav-link" href="../shop/product.php" style="width: 80px"><span class="chinese">SHOP</span>
                             <p class="change-hover-after mb-0">線上商店
                             </p>
                         </a>
                     </li>
 
                     <li class="nav-item ms-5">
-                        <a class="nav-link" href="../customization/customize.php"><span class="chinese">CUSTOMIZE</span>
+                        <a class="nav-link me-2" href="../customization/customize.php" style="width: 100px "><span class="chinese">CUSTOMIZE</span>
                             <p class="change-hover-after mb-0">完全客製化</p>
                         </a>
                     </li>
                     <li class="nav-item dropdown ms-5">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="chinese">TEAM</span>
+                        <a style="width: 80px" class="nav-link dropdown-toggle ps-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="chinese">TEAM</span>
                             <p class="change-hover-after mb-0">活動報名</p>
                         </a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
@@ -87,7 +87,7 @@ $cart = new Cart([
                         </ul>
                     </li>
                     <li class="nav-item ms-5">
-                        <a class="nav-link" href="../contact/contact.php"><span class="chinese">CONNECT</span>
+                        <a class="nav-link ps-3" href="../contact/contact.php" style="width: 100px"><span class="chinese">CONNECT</span>
                             <p class="change-hover-after mb-0">聯絡我們</p>
                         </a>
                     </li>
@@ -106,6 +106,18 @@ $cart = new Cart([
                 <a href="" type="button" class="member pt-2 "><i class="bi bi-person icon "></i></a>
 
             </div>
+
         </div>
     </nav>
     <!-- Path: layout/navbar.html -->
+
+    <script>
+        //小於1200px時，search-bar消失
+        $(window).resize(function() {
+            if ($(window).width() < 1200) {
+                $(".search").hide();
+            } else {
+                $(".search").show();
+            }
+        });
+    </script>

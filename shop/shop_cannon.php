@@ -131,7 +131,11 @@ include_once "../layout/second_navbar.php";
 
                             <p class="card-text text-white mt-3">Flex</p>
                             <div class="d-flex  flex-nowrap">
-                                <input type="radio" class="btn-check" name="Flex" id="Flex1" value="3" checked>
+                                <input type="radio" class="btn-check" name="Flex" id="Flex8" value="1" disabled>
+                                <label class="btn btn-light size-box me-3 p-0" for="Flex8">45</label>
+                                <input type="radio" class="btn-check" name="Flex" id="Flex7" value="2" disabled>
+                                <label class="btn btn-light size-box me-3 p-0" for="Flex7">50</label>
+                                <input type="radio" class="btn-check" name="Flex" id="Flex1" value="3">
                                 <label class="btn btn-light size-box me-3 p-0" for="Flex1">65</label>
                                 <input type="radio" class="btn-check" name="Flex" id="Flex2" value="4">
                                 <label class="btn btn-light size-box me-3 p-0" for="Flex2">70</label>
@@ -179,18 +183,25 @@ include_once "../layout/second_navbar.php";
             // 當選擇a時，啟用所有按鈕
             if ($(this).val() === "SENIOR") {
                 $("input[name='Flex']").prop("disabled", false);
+                $("input[value='1']").prop("disabled", true);
+                $("input[value='2']").prop("disabled", true);
+
             }
             // 當選擇b時，禁用6.7.8
             else if ($(this).val() === "INTERMEDIATE") {
+                $("input[value='1']").prop("disabled", true);
+                $("input[value='2']").prop("disabled", true);
                 $("input[value='6']").prop("disabled", true);
                 $("input[value='7']").prop("disabled", true);
                 $("input[value='8']").prop("disabled", true);
             } else if ($(this).val() === "JUNIOR") {
-                $("input[name='Flex']").prop("disabled", false);
+                $("input[name='Flex']").prop("disabled", true);
+                $("input[value='2']").prop("disabled", false);
+
             } else if ($(this).val() === "YOUTH") {
-                $("input[value='3']").prop("disabled", true);
-                $("input[value='4']").prop("disabled", true);
-                $("input[value='5']").prop("disabled", true);
+                $("input[name='Flex']").prop("disabled", true);
+                $("input[value='1']").prop("disabled", false);
+
             }
         });
 

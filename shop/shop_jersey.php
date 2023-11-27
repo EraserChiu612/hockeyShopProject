@@ -27,13 +27,13 @@ include_once "../layout/second_navbar.php";
                                 <input type="radio" class="btn-check" name="color2" id="color2_1" checked>
                                 <label class="btn box-black p-0" for="color2_1"></label>
                                 <input type="radio" class="btn-check" name="color2" id="color2_2">
-                                <label class="btn box-white p-0" for="color2_2"></label>
+                                <label class="btn  box-white p-0" for="color2_2"></label>
                                 <input type="radio" class="btn-check" name="color2" id="color2_3">
-                                <label class="btn box-gray p-0" for="color2_3"></label>
+                                <label class="btn  box-gray p-0" for="color2_3"></label>
                                 <input type="radio" class="btn-check" name="color2" id="color2_4">
-                                <label class="btn box-navy p-0" for="color2_4"></label>
+                                <label class="btn  box-navy p-0" for="color2_4"></label>
                                 <input type="radio" class="btn-check" name="color2" id="color2_5">
-                                <label class="btn box-red p-0" for="color2_5"></label>
+                                <label class="btn  box-red p-0" for="color2_5"></label>
                             </div>
                             <div>
                                 <p class="card-text text-white margin-jersey">Size</p>

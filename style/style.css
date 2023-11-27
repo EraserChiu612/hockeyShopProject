@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&family=Heebo:wght@300;400;600;700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap');
+
+
+
 @font-face {
     font-family: "Race Sport";
     src: url("../public/font/Race Sport.ttf") format('truetype');
@@ -11,7 +15,7 @@
 
 body {
     background-color: black;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', 'Noto Sans TC', sans-serif;
 }
 
 /* logo */
@@ -19,8 +23,8 @@ body {
     width: 100vw;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    background-color: #393939;
+    z-index: 2000;
+    background-color: #1E1E1E;
 }
 
 
@@ -240,7 +244,7 @@ a:hover span+p {
 .text-2 {
     color: #FFF;
     text-align: end;
-    font-family: Inter;
+
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
@@ -251,7 +255,7 @@ a:hover span+p {
 .text-3 {
     padding-top: 15px;
     color: #FFF;
-    font-family: Inter;
+
     font-size: 25px;
     font-style: normal;
     font-weight: 300;
@@ -267,7 +271,7 @@ a:hover span+p {
 .equipment {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+
     font-size: 26.66px;
     font-style: normal;
     font-weight: 600;
@@ -287,7 +291,7 @@ a:hover span+p {
 .customize-section {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+
     font-size: 26.66px;
     font-style: normal;
     font-weight: 600;
@@ -296,18 +300,20 @@ a:hover span+p {
 }
 
 .customize-text {
-    color: #FFF;
-    font-family: Inter;
+    background: linear-gradient(90deg, rgba(18, 214, 223, 1) 0%, rgba(247, 15, 255, 1) 100%);
+    background-clip: text;
+    font-family: "Race Sport";
     font-size: 52px;
     font-style: normal;
     font-weight: 800;
-    line-height: normal;
+    line-height: 45px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .customize-p {
     color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -315,7 +321,7 @@ a:hover span+p {
 
 .canonnpro-text {
     font-family: "Race Sport";
-    font-size: 47.3px;
+    font-size: 52px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -328,8 +334,7 @@ a:hover span+p {
 .canonnpro-p {
     width: 516px;
     color: #FFF;
-    font-family: Inter;
-    font-size: 31.81px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -337,6 +342,15 @@ a:hover span+p {
 
 /* 首頁結束 */
 /* about開始 */
+.img-about {
+    width: 711px;
+    height: 400px;
+}
+
+
+
+
+
 .about-title {
     font-family: 'Anton', sans-serif;
     color: #FFF;
@@ -461,29 +475,26 @@ a:hover span+p {
     height: 700px;
 }
 
-#btnPrev {
-    width: 30px;
-    height: 30px;
+#btnPrev,
+#btnNext {
+    width: 60px;
+    height: 60px;
+    color: white;
     /* background-image: url("../images/icon/prev.png"); */
-    font-size: 30px;
-    background-color: white;
+    font-size: 60px;
     line-height: 28px;
     border-radius: 50%;
     position: absolute;
-    top: 35%;
-    left: 15px
+    top: 40%;
+    cursor: pointer;
+}
+
+#btnPrev {
+    left: 15px;
 }
 
 #btnNext {
-    width: 30px;
-    height: 30px;
-    /* background-image: url("../images/icon/next.png"); */
-    font-size: 30px;
-    background-color: white;
-    line-height: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 35%;
+
     right: 5px;
 }
 
@@ -499,29 +510,25 @@ a:hover span+p {
     height: 700px;
 }
 
-#secbtnPrev {
-    width: 30px;
-    height: 30px;
+#secbtnPrev,
+#secbtnNext {
+    width: 60px;
+    height: 60px;
+    color: white;
     /* background-image: url("../images/icon/prev.png"); */
-    font-size: 30px;
-    background-color: white;
+    font-size: 60px;
     line-height: 28px;
     border-radius: 50%;
     position: absolute;
-    top: 35%;
+    top: 30%;
+    cursor: pointer;
+}
+
+#secbtnPrev {
     left: 15px;
 }
 
 #secbtnNext {
-    width: 30px;
-    height: 30px;
-    /* background-image: url("../images/icon/next.png"); */
-    font-size: 30px;
-    background-color: white;
-    line-height: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 35%;
     right: 5px;
 }
 
@@ -576,7 +583,7 @@ a:hover span+p {
     width: 160px;
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -585,7 +592,7 @@ a:hover span+p {
 
 .card-title-text {
     color: #FFF;
-    font-family: Inter;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -596,7 +603,7 @@ a:hover span+p {
 .card-title-btn {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -783,10 +790,10 @@ a:hover span+p {
     box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
 }
 
-.btn-check:focus+.btn,
-.btn:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);
-}
+/*.btn-check:focus+.btn,*/
+/*.btn:focus {*/
+/*    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0);*/
+/*}*/
 
 .size-box {
     width: 150px;
@@ -889,7 +896,6 @@ a:hover span+p {
 
 .text-customize-header {
     color: #FF5C00;
-    font-family: Inter;
     text-align: center;
     font-size: 57px;
     font-style: normal;
@@ -900,7 +906,7 @@ a:hover span+p {
 
 .text-customize-title {
     color: #FFF;
-    font-family: Inter;
+
     font-size: 42px;
     font-style: normal;
     font-weight: 900;
